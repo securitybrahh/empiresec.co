@@ -1,10 +1,7 @@
 ---
-author: SecurityBrahh
-date: "2025-03-20T19:01:07-05:00"
+title: "About"
+date: 2025-03-20T17:37:11Z
 draft: false
-hidemeta: true
-showToc: true
-title: About
 ---
 
 Contact
@@ -39,3 +36,5 @@ TikTok: [@anonstrategies](https://tiktok.com/@anonstrategies)
 
 Thank you,
 Securitybrahh
+
+

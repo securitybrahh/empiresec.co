@@ -1,7 +1,7 @@
-baseURL: 'https://empiresec.co/'
+baseURL: "https://empiresec.co/"
 languageCode: en-us
 title: EmpireSec
-theme: terminal
+theme: "terminal"
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -13,8 +13,8 @@ minify:
   minifyOutput: true
 
 params:
-  # env: production
-  title: empirsec.co
+  env: production
+  title: Empirsec
   description: "Welcome"
   author: securitybrahh
   DateFormat: "January 2, 2006"
@@ -158,7 +158,7 @@ markup:
     renderer:
       unsafe: true
   highlight:
-    # anchorLineNos: true
+    anchorLineNos: true
     codeFences: true
     guessSyntax: true
     lineNos: false

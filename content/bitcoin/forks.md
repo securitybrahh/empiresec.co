@@ -24,3 +24,14 @@ https://www.voltage.cloud/blog/lightning-network-privacy-explainer
 
 https://armantheparman.com/segwit/
 
+https://x.com/parman_the/status/1413920325201395718
+
+https://x.com/parman_the/status/1431656914526613522
+
+https://x.com/LukeDashjr/status/1404079880313131012
+
+https://x.com/parman_the/status/1620380903842385921
+
+https://x.com/SatsTonight/status/1408183766208684036
+
+https://x.com/TheVladCostea/status/1732745810339614793

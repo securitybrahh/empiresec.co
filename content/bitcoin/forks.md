@@ -1,10 +1,16 @@
 ---
 title: "Forks"
 date: 2025-03-21T08:30:08Z
-draft: true
+draft: false
 ---
 
 # What is a bitcoin fork?
+
+Miners v. node runners v. users v. client v. software v. entitiy
+
+Mempool policy v. drivechain v. Extention Block
+
+The block Size wars, UASF - User Activated Soft Fork {the miners making some soft fork so the node runners did a soft fork to invalidate their soft fork?} 
 
 Before I was familiar with bitcoin, forking usually meant forking the coidebase but in bitcoin its a different story.
 
@@ -43,3 +49,10 @@ https://x.com/TheVladCostea/status/1732745810339614793
 ![Taproot Activation](images/taproot-watch.jpg)
 
 https://taproot.watch/about
+
+#### Shitcoins on btc, what? 
+
+https://github.com/bitcoin/bips/blob/master/bip-0300.mediawiki
+
+Miner Incentives <=> MEV. 
+

@@ -35,3 +35,11 @@ https://x.com/parman_the/status/1620380903842385921
 https://x.com/SatsTonight/status/1408183766208684036
 
 https://x.com/TheVladCostea/status/1732745810339614793
+
+"So, what happened was the miners were allowed to signal first. By waiting for miners to indicate a Taproot majority, a scenario where nodes failed to upgrade to a majority, say it remained around 50:50"
+
+- [@parmaan_the](https://x.com/parman_the/status/1431660759579250693?s=19)
+
+![Taproot Activation](images/taproot-watch.jpg)
+
+https://taproot.watch/about

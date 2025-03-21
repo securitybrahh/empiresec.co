@@ -50,6 +50,10 @@ https://x.com/TheVladCostea/status/1732745810339614793
 
 https://taproot.watch/about
 
+## What is fullness of a non-miner node? 
+
+https://en.bitcoin.it/wiki/Full_node#Economic_strength
+
 #### Shitcoins on btc, what? 
 
 https://github.com/bitcoin/bips/blob/master/bip-0300.mediawiki

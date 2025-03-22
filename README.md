@@ -1,6 +1,6 @@
 # Mirrors
 
-https://securitybrahh.github.io/empiresec.co/
+https://empiresec.co/
 
 http://yyuqle3dyxfkvg7vj4tlymthchy2gaovwbi6sdd7fjlt5umwpplyufqd.onion
 
@@ -15,6 +15,12 @@ EXPERIMENTAL - nostr/stacker.news
 https://gitlab.com/securitybrahh/empiresec-co
 
 TODO - codeberg, source hut, hosted cgit
+
+## CDN
+
+https://github-pages.empiresec.co/
+
+https://gitlab-pages.empiresec.co/
 
 # Pl. Run Archives!
 

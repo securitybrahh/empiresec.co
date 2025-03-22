@@ -25,3 +25,7 @@ Segregation of online identities/accounts on user/profiles with services/messagi
 Peterson thinks that Pseudonomous handle/brand doesn't indlict damage to human psyche's identity, which is very big assumption and hence the claim lost. 
 
 https://write.hackliberty.org/fmda/jordan-peterson-is-wrong-about-anonymity
+
+## Consequences 
+
+Cryptographic reveal to get the person a fair trial. 

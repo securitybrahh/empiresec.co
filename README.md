@@ -4,7 +4,7 @@ https://empiresec.co/
 
 http://yyuqle3dyxfkvg7vj4tlymthchy2gaovwbi6sdd7fjlt5umwpplyufqd.onion
 
-TODO - i2p, gitlab pages, neocities bash, 
+TODO - i2p, neocities bash, 
 
 MAYBE - cloudflare CDN & Bunny CDN, netlify, Vercel
 
@@ -14,7 +14,7 @@ EXPERIMENTAL - nostr/stacker.news
 
 https://gitlab.com/securitybrahh/empiresec-co
 
-TODO - codeberg, source hut, hosted cgit
+TODO - codeberg, source hut, hosted cgit/forgejo
 
 ## CDN
 

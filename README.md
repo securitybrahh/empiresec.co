@@ -12,7 +12,9 @@ EXPERIMENTAL - nostr/stacker.news
 
 ## Git
 
-TODO - gitlab, codeberg.
+https://gitlab.com/securitybrahh/empiresec-co
+
+TODO - codeberg, source hut, hosted cgit
 
 # Pl. Run Archives!
 

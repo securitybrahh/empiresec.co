@@ -2,9 +2,9 @@
 
 https://empiresec.co/
 
-http://yyuqle3dyxfkvg7vj4tlymthchy2gaovwbi6sdd7fjlt5umwpplyufqd.onion
+http://yyuqle3dyxfkvg7vj4tlymthchy2gaovwbi6sdd7fjlt5umwpplyufqd.onion (Open in [TOR Browser](https://tpo.pages.torproject.net/core/doc/rust/arti/))
 
-http://empiresec.i2p, 2bl65rcolviien55g6djgmjiwlmvdppuhqbw7tai3axirgifadga.b32.i2p  
+http://empiresec.i2p (Open in [i2pd-browser](https://github.com/PurpleI2P/i2pdbrowser)) , 2bl65rcolviien55g6djgmjiwlmvdppuhqbw7tai3axirgifadga.b32.i2p  
 
 TODO - neocities bash, 
 

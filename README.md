@@ -4,7 +4,9 @@ https://empiresec.co/
 
 http://yyuqle3dyxfkvg7vj4tlymthchy2gaovwbi6sdd7fjlt5umwpplyufqd.onion
 
-TODO - i2p, neocities bash, 
+http://empiresec.i2p, 2bl65rcolviien55g6djgmjiwlmvdppuhqbw7tai3axirgifadga.b32.i2p  
+
+TODO - neocities bash, 
 
 MAYBE - cloudflare CDN & Bunny CDN, netlify, Vercel
 

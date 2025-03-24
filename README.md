@@ -14,7 +14,9 @@ EXPERIMENTAL - nostr/stacker.news
 
 https://gitlab.com/securitybrahh/empiresec-co
 
-TODO - codeberg, source hut, hosted cgit/forgejo
+https://codeberg.org/securitybrahh/empiresec.co
+
+TODO - source hut, hosted cgit/forgejo, sourceforge
 
 ## CDN
 

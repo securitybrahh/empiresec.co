@@ -8,7 +8,7 @@ http://empiresec.i2p (Open in [i2pd-browser](https://github.com/PurpleI2P/i2pdbr
 
 TODO - neocities bash, 
 
-MAYBE - cloudflare CDN & Bunny CDN, netlify, Vercel
+MAYBE - cloudflare CDN, netlify, Vercel
 
 EXPERIMENTAL - nostr/stacker.news
 
@@ -25,6 +25,8 @@ TODO - source hut, hosted cgit/forgejo, sourceforge
 https://github-pages.empiresec.co/
 
 https://gitlab-pages.empiresec.co/
+
+https://empiresec1.b-cdn.net/
 
 # Pl. Run Archives!
 

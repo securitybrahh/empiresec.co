@@ -12,22 +12,26 @@ yubikey series 5 nfc
 
 coldcard mk4
 
-bitaxe d-central
+bitaxe <d-central>
 
-mudiv2, mofi 5500
+mudiv2, ... maybe mofi 5500
 
-jmp esim adapter
+[jmp esim adapter](https://jmp.chat/esim-adapter)
 
-silent.link
+silent . link
 
-Permanode
+[Permanode](https://github.com/ArmanTheParman/Parmanode/pull/157)
 
 trueNAS.com/m-series
 
 macbook, maximum RAM for utm VM's
 
-latest pixel, pixel-pricing.netlify.app,GOS support page
+latest pixel, https://pixel-pricing.netlify.app, [GOS support page](https://grapheneos.org/faq#device-support)
 
 apple music subscription, cider.sh itch.io version
+
+buskill
+
+
 
 

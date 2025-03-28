@@ -18,7 +18,9 @@ https://gitlab.com/securitybrahh/empiresec-co
 
 https://codeberg.org/securitybrahh/empiresec.co
 
-TODO - source hut, hosted cgit/forgejo, sourceforge
+https://sourceforge.net/u/securitybrahh/code/ci/main/tree/
+
+TODO - source hut, hosted cgit/forgejo
 
 ## CDN
 

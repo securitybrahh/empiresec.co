@@ -4,7 +4,7 @@ date: 2025-04-05T02:02:29Z
 draft: false
 ---
 
-![Uploading image.png…]()
+![](diagram.jpeg)
 
 Setup on Parmadrive
 

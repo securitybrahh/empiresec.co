@@ -36,6 +36,10 @@ buskill
 
 Amazon Books and products ([one link](https://affiliate-program.amazon.com/help/node/topic/GKHRXG4YEJBTCAFC) or geni.us?)
 
-{{ with .Resources.GetMatch "images/approved/art-of-x.png" }}
-  <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-{{ end }}
+{{< figure
+  src="images/approved/art-of-x.png"
+  alt="The Art of X: Build a Business That Makes You $100/Day (UPDATED MARCH 2025)"
+  link="https://gumroad.com/a/426377683/XFFpt"
+  class="ma0 w-75"
+>}}
+

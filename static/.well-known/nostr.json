@@ -1,0 +1,13 @@
+{
+  "names": {
+    "securitybrahh": "5f9f0ad317ec836fd678202f0fb5aac5694f670888b2f5d3e6e7765d2043d03e"
+  },
+  "relays": {
+    "5f9f0ad317ec836fd678202f0fb5aac5694f670888b2f5d3e6e7765d2043d03e": [
+      "wss://hbr.coracle.social",
+      "wss://relay.damus.io",
+      "wss://relay.primal.net",
+      "wss://nostr.wine",
+    ]
+  }
+}

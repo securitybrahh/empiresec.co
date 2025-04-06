@@ -4,10 +4,19 @@ date: 2025-03-20T17:37:11Z
 draft: false
 ---
 
+About
+=======
+
+Teaching ppl how to stay anon since 1984. Privacy Plumber. Constructing Secure Digital Empires. DM's open. Not Security Advice. Breaker of Chains. Ecopolitica.
+
+Cutting edge Anonymity Research (Substack) / Newsletter : [Sovereignty Strategies](https://letters.empiresec.co)
+
+Twitter / X: [@securitybrahh](https://x.com/securitybrahh) (high quality DM's go here)
+
 Contact
 =======
 
-Cutting edge Anonymity Research (Substack) / Newsletter : [Sovereignity Strategies](https://letters.empiresec.co)
+Nostr: securitybrahh@empiresec.co ([NIP-05](https://github.com/nostr-protocol/nips/blob/master/05.md)), `npub1t70s45chajpkl4ncyqhsldd2c4557ecg3ze0t5lxuam96gzr6qlqae2qq0`
 
 If you like to be part of a telegram community of like minded people, check it out [here](https://empiresec.co/store/tg/).
 
@@ -25,13 +34,10 @@ email at **securitybrahh [at] empiresec.co**.
 
 These are my socials, every other is likely an imposter / fake account:
 
-Twitter / X: [@sedcuritybrahh](https://x.com/securitybrahh) (high quality DM's go here)
+~~Updated by Software~~ (Rarely open):
 
 Youtube: [Anon Strategies](https://www.youtube.com/@anonstrategies)
-
-Updated by Software (Rarely open):
-
-Instagram: [@anonstrategies](https://www.instagram.com/anonstrategies/)\
+Instagram: [@anonstrategies](https://www.instagram.com/anonstrategies)
 TikTok: [@anonstrategies](https://tiktok.com/@anonstrategies)
 
 Thank you,

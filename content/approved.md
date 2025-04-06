@@ -61,14 +61,14 @@ Amazon Books and products ([one link](https://affiliate-program.amazon.com/help/
 
 {{< figure
   src="images/approved/reddit.png"
-  alt="How to make $10k a month on Reddit""
+  alt="How to make $10k a month on Reddit"
   link="https://gumroad.com/a/454132179/usgum"
   class="ma0 w-75"
 >}}
 
 {{< figure
   src="images/approved/youtube-secrets.png"
-  alt="YouTube Secrets Start, Grow and Monitize your channel""
+  alt="YouTube Secrets Start, Grow and Monitize your channel"
   link="https://gumroad.com/a/761051603/seoek"
   class="ma0 w-75"
 >}}

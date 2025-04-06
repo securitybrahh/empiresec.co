@@ -4,7 +4,13 @@ date: 2025-04-05T02:02:29Z
 draft: false
 ---
 
-![](diagram.jpeg)
+
+{{< figure
+  src="diagram.jpeg"
+  alt="Homesec Diagram"
+  class="ma0 w-75"
+>}}
+
 
 Setup on Parmadrive
 

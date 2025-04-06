@@ -37,3 +37,11 @@ buskill
 > Amazon Books and products ([one link](https://affiliate-program.amazon.com/help/node/topic/GKHRXG4YEJBTCAFC) or geni.us?)
 
 
+{{ $image := resources.Get "images/approved/art-of-x.png" }}
+{{ $image := $image.Process "resize 600x" }}
+{{ $image := $image.Process "crop 600x400" }}
+{{ $image := $image.Process "fit 600x400" }}
+{{ $image := $image.Process "fill 600x400" }}
+{{ with $image }}
+  <a href="https://gumroad.com/a/426377683/XFFpt"><img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"></a>
+{{ end }}

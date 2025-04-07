@@ -6,6 +6,36 @@ draft: false
 
 # Approved Products
 
+### Software
+
+protonmail,forwardemail, tuta
+
+mullvad, ivpn, obscura 
+
+Filen Drive
+
+Proton Docs
+
+orangewebsite
+
+apple music subscription, cider.sh itch.io version
+
+## Payments
+
+trocador app, cake pay cards, coincards
+
+### Hardware
+
+flipper zero
+
+DIY Pineapple
+
+black pepper spray
+
+baton
+
+analog alarm
+
 2-3 onlykeys
 
 yubikey series 5 nfc
@@ -28,13 +58,23 @@ macbook, maximum RAM for utm VM's
 
 latest pixel, https://pixel-pricing.netlify.app, [GOS support page](https://grapheneos.org/faq#device-support)
 
-apple music subscription, cider.sh itch.io version
-
 upscreen spy shield
 
 buskill
 
-Amazon Books and products ([one link](https://affiliate-program.amazon.com/help/node/topic/GKHRXG4YEJBTCAFC) or geni.us?)
+Amazon Books and products
+
+Small Safe, Big safe, Bank Lockers, vaults,
+
+cameras, alarms, sensors, [home-sec](/projects/home-sec),doorbell,
+
+Shredder
+
+https://www.reflectacles.com/
+
+## Clothing
+
+Hat
 
 
 {{< figure

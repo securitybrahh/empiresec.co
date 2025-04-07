@@ -8,6 +8,8 @@ you should run an insecure app in a vm, ideally but sandbox-exec is nice as well
 
 https://github.com/sunknudsen/privacy-guides/tree/master/how-to-spoof-mac-address-and-hostname-automatically-at-boot-on-macos
 
+https://github.com/sunknudsen/privacy-guides/tree/master/how-to-disable-cups-printer-job-history-on-macos
+
 # Driver
 
 https://gofetch.fail/, [fix](https://social.treehouse.systems/@marcan/112238385679496096)

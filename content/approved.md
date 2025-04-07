@@ -6,7 +6,13 @@ draft: false
 
 # Approved Products
 
+### Skills
+
+copywriting as a tool for anonymity.
+
 ### Software
+
+bitwarden
 
 protonmail,forwardemail, tuta
 
@@ -16,15 +22,41 @@ Filen Drive
 
 Proton Docs
 
-orangewebsite
+orangewebsite, OVH
 
 apple music subscription, cider.sh itch.io version
 
-## Payments
+https://github.com/superbacked/superbacked
+
+### Creatives
+
+Softmaker ofice
+
+Davinci
+
+blender as after effects
+
+[photogimp](https://github.com/Diolinux/PhotoGIMP)
+
+Affinity
+
+### Payments
 
 trocador app, cake pay cards, coincards
 
+monero 
+
+silent payments
+
+lightning
+
 ### Hardware
+
+Webcam cover
+
+mic condom
+
+SLNT fardaday bag
 
 flipper zero
 
@@ -35,6 +67,8 @@ black pepper spray
 baton
 
 analog alarm
+
+Kanguru FlashTrust™ Secure Firmware USB 3.0 Flash Drive
 
 2-3 onlykeys
 
@@ -70,12 +104,15 @@ cameras, alarms, sensors, [home-sec](/projects/home-sec),doorbell,
 
 Shredder
 
-https://www.reflectacles.com/
-
-## Clothing
+### Clothing
 
 Hat
 
+https://www.reflectacles.com/
+
+Gait shoes
+
+# Guides
 
 {{< figure
   src="images/approved/100MM.png"

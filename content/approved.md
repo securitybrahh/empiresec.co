@@ -80,6 +80,8 @@ bitaxe <d-central>
 
 mudiv2, ... maybe mofi 5500
 
+vanilla openwrt router
+
 [jmp esim adapter](https://jmp.chat/esim-adapter)
 
 silent . link

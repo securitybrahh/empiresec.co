@@ -14,7 +14,7 @@ copywriting as a tool for anonymity.
 
 bitwarden
 
-protonmail,forwardemail, tuta
+protonmail,forwardemail, tuta {protonmail/forwardemail doesn't encrypot social graph}
 
 mullvad, ivpn, obscura 
 

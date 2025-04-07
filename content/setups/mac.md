@@ -14,6 +14,17 @@ My daily driver Config
 
 https://support.apple.com/en-us/HT201222 on mullvad browser autostart
 
+## VPN
+
+"Our macOS app installs a [Network Extension](https://developer.apple.com/system-extensions/), which is a fully sandboxed process with no kernel-level access to your system." - Obscura
+
+"AFAIK all traffic is now adequately routed thru the network extensions
+meaning, firewalls should be able now be comprehensive"
+
+check via charles proxy, wireshark, router logs.
+
+is it bypasses utm, VM's, containers, docker, etc? how extensive
+
 ## M1 Pro 32 GB
 
 Karabiner Elements - commamd key to open launchpad,  

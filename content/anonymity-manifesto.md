@@ -4,6 +4,12 @@ date: 2025-03-22T04:28:26Z
 draft: true
 ---
 
+crypto_agorism.pdf
+
+https://www.activism.net/cypherpunk/manifesto.html
+
+https://write.hackliberty.org/fmda/jordan-peterson-is-wrong-about-anonymity
+
 # Anonymity
 
 Without OpSec, security & reasonable privacy Not at the cost of sec, anonymity means shit.

@@ -10,6 +10,8 @@ https://github.com/sunknudsen/privacy-guides/tree/master/how-to-spoof-mac-addres
 
 https://github.com/sunknudsen/privacy-guides/tree/master/how-to-disable-cups-printer-job-history-on-macos
 
+https://github.com/sunknudsen/privacy-guides/tree/master/how-to-setup-system-wide-mullvad-dns-over-https-on-ios-and-macos
+
 # Driver
 
 https://gofetch.fail/, [fix](https://social.treehouse.systems/@marcan/112238385679496096)

@@ -6,6 +6,8 @@ draft: false
 
 you should run an insecure app in a vm, ideally but sandbox-exec is nice as well - eg to run zoom -- https://gist.github.com/cielavenir/02f322e322a2a3555dbf2b38f2fedd59
 
+echo "127.0.0.1 ocsp.apple.com" | sudo tee -a /etc/hosts
+
 https://github.com/sunknudsen/privacy-guides/tree/master/how-to-spoof-mac-address-and-hostname-automatically-at-boot-on-macos
 
 https://github.com/sunknudsen/privacy-guides/tree/master/how-to-disable-cups-printer-job-history-on-macos

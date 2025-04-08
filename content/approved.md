@@ -106,6 +106,10 @@ cameras, alarms, sensors, [home-sec](/projects/home-sec),doorbell,
 
 Shredder
 
+### Services
+
+https://www.rsync.net/products/borg.html
+
 ### Clothing
 
 Hat

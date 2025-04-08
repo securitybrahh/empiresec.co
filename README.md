@@ -22,6 +22,8 @@ https://sourceforge.net/u/securitybrahh/code/ci/main/tree/
 
 TODO - source hut, hosted cgit/forgejo
 
+glitch. com?? 
+
 ## CDN
 
 https://github-pages.empiresec.co/

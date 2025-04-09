@@ -138,6 +138,10 @@ menu:
       name: "Approved Products"
       url: /approved
       weight: 12
+    - identifier: disclaimer
+      name: "DISCLAIMER"
+      url: /site-wide-disclaimer
+      weight: 13
 
 privacy:
   disqus:

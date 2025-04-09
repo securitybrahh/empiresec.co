@@ -8,8 +8,6 @@ author: "Security Brahh"
 description: ""
 ---
 
-# Introduction
+# This site is niether legal, financial, nor Security advice of any kind
 
-# Conclusion
-
-If you have any questions from this post or would like more information on a specific aspect, please reach out via [Email, X, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}).
+This website is for educational purposes, the site owner is not liable for anything reader does. 

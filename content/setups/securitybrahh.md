@@ -119,3 +119,20 @@ SmartWatch / Ring / Fitness
 ---------------------------
 
 ADP'd apple watch.
+
+<script src="https://giscus.app/client.js"
+        data-repo="securitybrahh/empiresec.co"
+        data-repo-id="R_kgDOOL5WwA"
+        data-category="General"
+        data-category-id="DIC_kwDOOL5WwM4CpBdp"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="catppuccin_mocha"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>

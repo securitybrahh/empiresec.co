@@ -118,6 +118,131 @@ https://www.reflectacles.com/
 
 Gait shoes
 
+# Books
+
+<table>
+  <tr>
+    <td>
+      {{< figure
+        src="images/approved/books/click.png"
+        alt="Click Here to Kill Everybody by Bruce Shneier"
+        link="https://amzn.to/3G8QJn0"
+        class="ma0 w-75"
+      >}}
+    </td>
+    <td>
+      {{< figure
+        src="images/approved/books/sandworm.png"
+        alt="Sandworm by Andy Greenberg"
+        link="https://amzn.to/3RcW4w1"
+        class="ma0 w-75"
+      >}}
+    </td>
+    <td>
+      {{< figure
+        src="images/approved/books/invisiblity.png"
+        alt="The Art of Invisibility by Kevin Mitnick"
+        link="https://amzn.to/3Rddetp"
+        class="ma0 w-75"
+      >}}
+    </td>
+    <td>
+      {{< figure
+        src="images/approved/books/jjluna.png"
+        alt="How to Be Invisible by J. J. Luna"
+        link="https://amzn.to/3RgmNru"
+        class="ma0 w-75"
+      >}}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      {{< figure
+        src="images/approved/books/power.png"
+        alt="Privacy is Power by Carissa Veliz"
+        link="https://amzn.to/4ctYPCZ"
+        class="ma0 w-75"
+      >}}
+    </td>
+    <td>
+      {{< figure
+        src="images/approved/books/capitalism.png"
+        alt="The Age of Surveillance Capitalism by Shoshana Zuboff"
+        link="https://amzn.to/4jAI8Il"
+        class="ma0 w-75"
+      >}}
+    </td>
+    <td>
+      {{< figure
+        src="images/approved/books/wires.png"
+        alt="Ghost in the Wires by Kevin Mitnick"
+        link="https://amzn.to/4i7WiPP"
+        class="ma0 w-75"
+      >}}
+    </td>
+    <td>
+      {{< figure
+        src="images/approved/books/dragons.png"
+        alt="Firewalls Don't Stop Dragons by Carey Parker"
+        link="https://amzn.to/43Xc7Wp"
+        class="ma0 w-75"
+      >}}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      {{< figure
+        src="images/approved/books/control.png"
+        alt="Means of Control by Byron Tau"
+        link="https://amzn.to/4jsNjK7"
+        class="ma0 w-75"
+      >}}
+    </td>
+    <td>
+      {{< figure
+        src="images/approved/books/bazzell.png"
+        alt="Extreme Privacy by Michael Bazzell"
+        link="https://amzn.to/42GS7Ga"
+        class="ma0 w-75"
+      >}}
+    </td>
+    <td>
+      {{< figure
+        src="images/approved/books/face.png"
+        alt="Your Face Belongs to Us by Kashmir Hill"
+        link="https://amzn.to/4ihJE0V"
+        class="ma0 w-75"
+      >}}
+    </td>
+    <td>
+      {{< figure
+        src="images/approved/books/intrusion.png"
+        alt="The Art of Intrusion by Kevin D. Mitnick"
+        link="https://amzn.to/4cByymk"
+        class="ma0 w-75"
+      >}}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      {{< figure
+        src="images/approved/books/deception.png"
+        alt="The Art of Deception by Kevin D. Mitnick, William L. Simon"
+        link="https://amzn.to/4crCoxY"
+        class="ma0 w-75"
+      >}}
+    </td>
+    <td>
+      {{< figure
+        src="images/approved/books/non-tech.png"
+        alt="No Tech Hacking"
+        link="https://amzn.to/3XWWw5o"
+        class="ma0 w-75"
+      >}}
+    </td>
+  </tr>
+</table>
+
 # Guides
 
 {{< figure

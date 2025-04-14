@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 blockquote.twitter-tweet {
     color: var(--secondary);
 }

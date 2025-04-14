@@ -17,6 +17,8 @@ Gym
 
 Bar
 
+[How to Protect Your Privacy While Finding Love Online | The New Oil
+](https://youtube.com/watch?v=fvhy94CwEXw)
 # Conclusion
 
 If you have any questions from this post or would like more information on a specific aspect, please reach out via [Email, X, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}).

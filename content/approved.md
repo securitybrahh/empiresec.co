@@ -52,11 +52,13 @@ lightning
 
 ### Hardware
 
-Webcam cover
+[Webcam cover](https://amzn.to/4j8gx1b)
+
+[USB Data Blocker](https://amzn.to/42KCbTi)
 
 mic condom
 
-SLNT fardaday bag
+[SLNT fardaday bag](https://amzn.to/3G4pDO5)
 
 flipper zero
 
@@ -68,17 +70,17 @@ baton
 
 analog alarm
 
-Kanguru FlashTrust™ Secure Firmware USB 3.0 Flash Drive
+[Kanguru FlashTrust™ Secure Firmware USB 3.0 Flash Drive](https://amzn.to/3GlrAFF)
 
-2-3 onlykeys
+2-3 [onlykeys](https://amzn.to/4ctl0ZL)
 
-yubikey series 5 nfc
+[yubikey series 5 nfc](https://amzn.to/4ibJ1FV)
 
 coldcard mk4
 
 bitaxe <d-central>
 
-mudiv2, ... maybe mofi 5500
+[mudiv2](https://amzn.to/4jobedC), ... maybe mofi 5500
 
 vanilla openwrt router.    Linksys 3200 ACM,? 
 
@@ -92,19 +94,17 @@ trueNAS.com/m-series
 
 macbook, maximum RAM for utm VM's
 
-latest pixel, https://pixel-pricing.netlify.app, [GOS support page](https://grapheneos.org/faq#device-support)
+[latest pixel](https://amzn.to/3G6r5iF), https://pixel-pricing.netlify.app, [GOS support page](https://grapheneos.org/faq#device-support)
 
-upscreen spy shield
+[upscreen spy shield](https://amzn.to/4juYlP0)
 
 buskill
 
-Amazon Books and products
-
-Small Safe, Big safe, Bank Lockers, vaults,
+Small Safe, [Big safe](https://amzn.to/429njhc), Bank Lockers, vaults,
 
 cameras, alarms, sensors, [home-sec](/projects/home-sec),doorbell,
 
-Shredder
+[Shredder](https://amzn.to/3RjH7Z3)
 
 ### Services
 

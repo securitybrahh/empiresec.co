@@ -1,0 +1,7 @@
+<center>
+    {{ with .Resources.GetMatch . }}
+      {{ with .Resize 600x }}
+        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+      {{ end }}
+    {{ end }}
+</center>

@@ -1,13 +1,15 @@
 {
   "name": "empiresec.co",
   "version": "1.0.0",
-  "description": "",
+  "description": "Main site of Empiresec",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    "build-tw": "tailwindcss -i ./assets/css/extended/custom.css -o ./assets/style.css",
+    "watch-tw": "tailwindcss -i ./assets/css/extended/custom.css -o ./assets/style.css -w --minify"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [privacy,security,anonymity,cybersecurity,infosec,sec],
+  "author": "securitybrahh",
+  "license": "MIT",
   "packageManager": "pnpm@10.8.0"
 }

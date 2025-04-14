@@ -11,5 +11,8 @@
   "keywords": [privacy,security,anonymity,cybersecurity,infosec,sec],
   "author": "securitybrahh",
   "license": "MIT",
-  "packageManager": "pnpm@10.8.0"
+  "packageManager": "pnpm@10.8.0",
+  "devDependencies": {
+    "tailwindcss": "4.1.3",
+  }
 }

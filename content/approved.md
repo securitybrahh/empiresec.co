@@ -116,7 +116,7 @@ Hat
 
 https://www.reflectacles.com/
 
-Gait shoes
+Gait shoes https://gitlab.com/FG-01/fg-01
 
 # Books
 

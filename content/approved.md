@@ -106,6 +106,12 @@ cameras, alarms, sensors, [home-sec](/projects/home-sec),doorbell,
 
 [Shredder](https://amzn.to/3RjH7Z3)
 
+### Gear
+
+[Pacsafe Backpack](https://amzn.to/4lygtcK)
+
+[RFID Wallet](https://amzn.to/4jepjee)
+
 ### Services
 
 https://www.rsync.net/products/borg.html

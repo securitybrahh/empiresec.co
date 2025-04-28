@@ -8,25 +8,26 @@ author: "Security Brahh"
 description: ""
 ---
 
-# Introduction
+# Fit
 
-# Conclusion
+steel
 
-If you have any questions from this post or would like more information on a specific aspect, please reach out via [Email, X, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}).
+Cable
 
-<script src="https://giscus.app/client.js"
-        data-repo="securitybrahh/empiresec.co"
-        data-repo-id="R_kgDOOL5WwA"
-        data-category="General"
-        data-category-id="DIC_kwDOOL5WwM4CpBdp"
-        data-mapping="pathname"
-        data-strict="1"
-        data-reactions-enabled="1"
-        data-emit-metadata="1"
-        data-input-position="top"
-        data-theme="catppuccin_mocha"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
+gravity
+
+volume for hypertrophy
+
+intensity for skill
+
+protein
+
+sun
+
+sleep
+
+grapple & kickboxing
+
+spinal breathing
+
+micronutrients for SNP

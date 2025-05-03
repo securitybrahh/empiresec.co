@@ -64,7 +64,7 @@ jobs:
       - name: Build with Hugo
         run: |
           hugo \
-            --config ip.yml \
+            --config github.yml \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \

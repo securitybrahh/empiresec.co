@@ -1,6 +1,6 @@
 # Mirrors
 
-https://empiresec.co/
+https://server.empiresec.co/ (VPS) 
 
 http://yyuqle3dyxfkvg7vj4tlymthchy2gaovwbi6sdd7fjlt5umwpplyufqd.onion (Open in [TOR Browser](https://tpo.pages.torproject.net/core/doc/rust/arti/))
 
@@ -26,7 +26,7 @@ glitch. com??
 
 ## CDN
 
-https://github-pages.empiresec.co/
+https://www.empiresec.co/ (github pages) 
 
 https://gitlab-pages.empiresec.co/
 

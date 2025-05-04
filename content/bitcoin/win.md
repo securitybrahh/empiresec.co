@@ -32,7 +32,11 @@ Sad.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">do they do on-chain analysis?<br><br>if yes they are not &quot;crypto&quot; friendly. <br><br>Alao does the bank account has a crypto address I deposit to, or I place orders on an exchange?</p>&mdash; sovereign Shadow (@securitybrahh) <a href="https://twitter.com/securitybrahh/status/1917639990751944850?ref_src=twsrc%5Etfw">April 30, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![AML In "Crypto" Friendly Banks](aml-in-crypto-friendly-banks.png) 
+{{< figure
+  src="aml-in-crypto-friendly-banks.png"
+  alt="AML In "Crypto" Friendly Banksm"
+  class="ma0 w-75"
+>}}
 
 ### Custodians
 

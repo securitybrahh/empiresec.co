@@ -76,7 +76,8 @@ The federation of Liquid,
 Bitcoin stick -disposable wallet- https://opendime.com/faq
 
 Lightning is better at privacy (i.e. its cash) than [monero-the-shitcoin](https://letters.empiresec.co/p/monero-is-cash)
-https://primal.net/e/nevent1qqsvxmzxpty8yrgeevntw90xn2c2vlzguyerecg62fv3n6udgw35eqqq5q9n4
+
+[lightning >> fcmp](https://primal.net/e/nevent1qqsvxmzxpty8yrgeevntw90xn2c2vlzguyerecg62fv3n6udgw35eqqq5q9n4)
 
 https://x.com/beeforbacon1
 

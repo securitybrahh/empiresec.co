@@ -10,15 +10,15 @@ description: "This is how bitcoin will Win"
 
 # This is how bitcoin will Win
 
-## Gun is Law
+### Gun is Law
 
 Code is free speech, enforcement can only be done via threat of violence.
 
-## Central bank
+### Central bank
 
 Bitcoin HAS replaced central banks they just don't know that yet.
 
-## Banks
+### Banks
 
 For bitcoin banks to exist you need: 
 
@@ -32,9 +32,9 @@ Sad.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">do they do on-chain analysis?<br><br>if yes they are not &quot;crypto&quot; friendly. <br><br>Alao does the bank account has a crypto address I deposit to, or I place orders on an exchange?</p>&mdash; sovereign Shadow (@securitybrahh) <a href="https://twitter.com/securitybrahh/status/1917639990751944850?ref_src=twsrc%5Etfw">April 30, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-!(AML In "Crypto" Friendly Banks)[aml-in-crypto-friendly-banks.png]
+![AML In "Crypto" Friendly Banks](aml-in-crypto-friendly-banks.png) 
 
-## Custodians
+### Custodians
 
 https://bitkey.build/inheritance-is-live-heres-how-it-works/
 
@@ -44,7 +44,7 @@ https://www.unchained.com/
 
 https://armantheparman.com/inheritance/
 
-## Company Ledgers
+### Company Ledgers
 
 We need a sidechain that protects privacy of unit of accounts of companies, liquid is a federation not a sidechain.
 
@@ -53,7 +53,7 @@ Post Liquid - A better porotocol on top of or side of the bitcoin chain, as bitc
 
 Also companies need to have privacy if btc is accepted as unit of account, albeit some info can be in black and white (btc) {countries have portals for disclosures, filings etc} 
 
-## Inter-country Settlements
+### Inter-country Settlements
 
 """
 
@@ -67,11 +67,11 @@ Also companies need to have privacy if btc is accepted as unit of account, albei
 
 https://www.btcbreakdown.com/p/issue-219
 
-## SWIFT
+### SWIFT
 
 The federation of Liquid,
 
-## Cash
+### Cash
 
 Bitcoin stick -disposable wallet- https://opendime.com/faq
 
@@ -80,15 +80,15 @@ https://primal.net/e/nevent1qqsvxmzxpty8yrgeevntw90xn2c2vlzguyerecg62fv3n6udgw35
 
 https://x.com/beeforbacon1
 
-## Trojan Horse
+### Trojan Horse
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3xH1vBuDbBA?si=leV2AYgg7BL8SamI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="360" height="200" src="https://www.youtube.com/embed/3xH1vBuDbBA?si=leV2AYgg7BL8SamI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 https://bitcoinlaws.io/federal
 
 https://bitcointreasuries.net/
 
-# Conclusion
+# Feedback
 
 If you have any questions from this post or would like more information on a specific aspect, please reach out via [Email, X, or Nostr]({{< ref "/about.md#how-to-contact-me" >}}).
 

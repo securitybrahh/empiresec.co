@@ -1,7 +1,7 @@
 ---
 title: "Anonymity Manifesto"
 date: 2025-03-22T04:28:26Z
-draft: true
+draft: false
 ---
 
 crypto_agorism.pdf

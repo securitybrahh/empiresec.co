@@ -34,7 +34,7 @@ Sad.
 
 {{< figure
   src="aml-in-crypto-friendly-banks.png"
-  alt="AML In "Crypto" Friendly Banksm"
+  alt="AML In "Crypto" Friendly Banks"
   class="ma0 w-75"
 >}}
 
@@ -76,6 +76,8 @@ https://www.btcbreakdown.com/p/issue-219
 The federation of Liquid,
 
 ### Cash
+
+bitcoin in its current state is not [fungible](https://sethforprivacy.com/posts/fungibility-graveyard/) but it can be solved via https://joinstr.xyz/
 
 Bitcoin stick -disposable wallet- https://opendime.com/faq
 

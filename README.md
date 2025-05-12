@@ -1,6 +1,6 @@
 # Mirrors
 
-https://server.empiresec.co/ (VPS) 
+${\textsf{\color{red}CDN}}$ - https://www.empiresec.co/ (github pages) 
 
 http://yyuqle3dyxfkvg7vj4tlymthchy2gaovwbi6sdd7fjlt5umwpplyufqd.onion (Open in [TOR Browser](https://tpo.pages.torproject.net/core/doc/rust/arti/))
 
@@ -25,8 +25,6 @@ TODO - source hut, hosted cgit/forgejo
 glitch. com?? 
 
 ## CDN
-
-https://www.empiresec.co/ (github pages) 
 
 https://gitlab-pages.empiresec.co/
 

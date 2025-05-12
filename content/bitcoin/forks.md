@@ -48,7 +48,7 @@ https://x.com/TheVladCostea/status/1732745810339614793
 
 {{< figure
   src="images/bitcoin/taproot-watch.jpg"
-  alt="AML In Crypto Friendly Banks"
+  alt="Taproot Activation how bitcoin is hard forked via miner consensus"
   class="ma0 w-75"
 >}}
 

@@ -13,4 +13,8 @@ readingTime: false
 hideComments: false
 ---
 
-![](first-steps.jpg)
+{{< figure
+  src="images/posts/first-steps.jpg"
+  alt="Anonymity 0 to 100 first steps of Privacy"
+  class="ma0 w-75"
+>}}

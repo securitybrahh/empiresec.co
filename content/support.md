@@ -1,11 +1,11 @@
 ---
-title: "Donate"
+title: "Support"
 date: 2025-03-21T09:05:46Z
 draft: false
 ---
 
 
-# Tips
+# Support
 
 https://btcpay0.voltageapp.io/apps/LeQKWDAo6MgwDdvVTo2JrN7CBnW/pos
 

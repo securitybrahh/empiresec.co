@@ -28,6 +28,8 @@ apple music subscription, cider.sh itch.io version
 
 https://github.com/superbacked/superbacked
 
+https://nightshade.cs.uchicago.edu/whatis.html
+
 ### Creatives
 
 Softmaker ofice
@@ -118,9 +120,9 @@ https://www.rsync.net/products/borg.html
 
 ### Clothing
 
-Hat
+Mexican like hat permissible in your env, for manual camera surveillance 
 
-https://www.reflectacles.com/
+https://www.reflectacles.com/ for camera-AI-surveillance 
 
 Gait shoes https://gitlab.com/FG-01/fg-01
 

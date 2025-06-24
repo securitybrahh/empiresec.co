@@ -6,8 +6,8 @@ draft: false
 
 
 {{< figure
-  src="diagram.jpeg"
-  alt="Homesec Diagram"
+  src="images/projects/diagram.jpeg"
+  alt="Home Security Diagram"
   class="ma0 w-75"
 >}}
 

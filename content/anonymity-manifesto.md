@@ -16,7 +16,11 @@ Without OpSec, security & reasonable privacy Not at the cost of sec, anonymity m
 
 ## The Human Impression
 
-![The Spy](spyfamily.jpg) 
+{{< figure
+  src="images/spyfamily.jpg"
+  alt="Spy Family Anonymity Manifesto"
+  class="ma0 w-75"
+>}}
 
 The spy ideology. 
 

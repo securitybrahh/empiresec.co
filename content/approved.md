@@ -118,6 +118,10 @@ cameras, alarms, sensors, [home-sec](/projects/home-sec),doorbell,
 
 [RFID Wallet](https://amzn.to/4jepjee)
 
+Salkoa Survival Kit
+
+https://www.kollmorgen.com/en-us/blogs/what-is-cots
+
 ### Services
 
 https://www.rsync.net/products/borg.html

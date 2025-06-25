@@ -97,4 +97,4 @@ Pin stripe mafia
 
 bankers, lawyers, accountants
 
-<insert country specific mitigations rolodex>
+TODO: insert country specific mitigations rolodex

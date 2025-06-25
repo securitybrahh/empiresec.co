@@ -96,3 +96,5 @@ https://flipperzero.one/compliance
 Pin stripe mafia 
 
 bankers, lawyers, accountants
+
+<insert country specific mitigations rolodex>

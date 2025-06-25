@@ -14,6 +14,22 @@ description: "This is how bitcoin will Win"
 
 Code is free speech, enforcement can only be done via threat of violence.
 
+Gov/private city can tax 1 to 5 % to hire for security, and the governmental structure would be very limited to what they can fund.
+
+https://x.com/securitybrahh/status/1928036042491429287
+
+## Commercial Contracts? 
+
+ots-notorized-otspgp-signed-doc on op_Return?
+
+${\textsf{\color{red}MAYBE}}$ least dust on chain contracts - https://x.com/robin_linus/status/1824004440099053949
+
+UX dashboard for private city police to check docs, laws, etc
+
+https://x.com/securitybrahh/status/1927044965084869061
+
+https://github.com/ArmanTheParman/bitvotr
+
 ### Central bank
 
 Bitcoin HAS replaced central banks they just don't know that yet.
@@ -87,6 +103,10 @@ Lightning is better at privacy (i.e. its cash) than [monero-the-shitcoin](https:
 
 https://x.com/beeforbacon1
 
+## 1st, 2nd & 4th Amendment
+
+https://x.com/securitybrahh/status/1928792148922741131
+
 ### Trojan Horse
 
 <iframe width="360" height="200" src="https://www.youtube.com/embed/3xH1vBuDbBA?si=leV2AYgg7BL8SamI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -94,6 +114,12 @@ https://x.com/beeforbacon1
 https://bitcoinlaws.io/federal
 
 https://bitcointreasuries.net/
+
+## Addendum A
+
+https://free-cities.org/free-private-cities-whitepaper/
+
+https://freedomhaven.org/
 
 # Feedback
 

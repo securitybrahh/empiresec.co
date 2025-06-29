@@ -24,13 +24,17 @@ when you are interacting with a Merchant, only that Business has your data, not 
 
 ## DM
 
-## Group
+## Group / which joined
 
 ## Payments
 
-## Metadata
+## Metadata, who you talking too. 
 
 ## Voice/Video Call
+
+## Contacts
+
+## Signal like transparency reports on Gag orders?? 
 
 # Conclusion
 

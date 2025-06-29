@@ -1,4 +1,4 @@
-baseURL: "https://server.empiresec.co/"
+baseURL: "https://www.empiresec.co/"
 languageCode: en-us
 title: EmpireSec
 theme: "terminal"
@@ -114,6 +114,10 @@ menu:
       name: "Store"
       url: "https://store.empiresec.co"
       weight: 6
+    - identifier: reports
+      name: "Reports"
+      url: /reports
+      weight: 7
     - identifier: setups
       name: "Setup"
       url: /setups

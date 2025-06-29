@@ -2,13 +2,19 @@
 title: "Altbtc"
 date: 2025-06-24T20:48:40Z
 # weight: 1
-# aliases: ["/first"]
-tags: []
+aliases: ["/altbtc"]
+tags: ["bitcoin", "crypto", "funding"]
 author: "Security Brahh"
-description: ""
+description: "Where are btc Angels, grants, bounties, VC, why GOOD projs need to do ICO? "
 ---
 
 # Introduction
+
+Sometimes projects are viable even when using chit chains because of lack of btc angles & VC's, loans. 
+
+bittensor
+
+nym vpn
 
 # Conclusion
 

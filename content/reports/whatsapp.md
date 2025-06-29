@@ -2,13 +2,35 @@
 title: "Whatsapp"
 date: 2025-06-29T13:54:52Z
 # weight: 1
-# aliases: ["/first"]
-tags: []
+aliases: ["/whatsapp"]
+tags: [messenger, privacy, security, whatsapp]
 author: "Security Brahh"
-description: ""
+description: "state of Encryption on whatsapp"
 ---
 
-# Introduction
+# state of Encryption on whatsapp
+
+Locked Chats
+
+Disappearing Messages
+
+Ultra Privacy Switch
+
+## Businesses & vendors
+
+when you are interacting with a Merchant, only that Business has your data, not Meta/Facebook unless you tag @MetaAI
+
+## Meta AI
+
+## DM
+
+## Group
+
+## Payments
+
+## Metadata
+
+## Voice/Video Call
 
 # Conclusion
 

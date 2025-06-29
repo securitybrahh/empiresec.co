@@ -3,7 +3,7 @@ title: "Whatsapp"
 date: 2025-06-29T13:54:52Z
 # weight: 1
 aliases: ["/whatsapp"]
-tags: [messenger, privacy, security, whatsapp]
+tags: ["messenger", "privacy", "security"," whatsapp"]
 author: "Security Brahh"
 description: "state of Encryption on whatsapp"
 ---

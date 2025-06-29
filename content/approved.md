@@ -6,6 +6,10 @@ draft: false
 
 # Approved Products
 
+### HomeSec
+
+https://github.com/securitybrahh/homesec
+
 ### Skills
 
 copywriting as a tool for anonymity.
@@ -114,13 +118,17 @@ cameras, alarms, sensors, [home-sec](/projects/home-sec),doorbell,
 
 [RFID Wallet](https://amzn.to/4jepjee)
 
+Salkoa Survival Kit
+
+https://www.kollmorgen.com/en-us/blogs/what-is-cots
+
 ### Services
 
 https://www.rsync.net/products/borg.html
 
 ### Clothing
 
-Mexican like hat permissible in your env, for manual camera surveillance 
+Mexican like hat / hasidic jew long thin black hat permissible in your env, for manual camera surveillance - be aware of camers surrounding you in public, if you have pinholes in public spaces - better leave your country. 
 
 https://www.reflectacles.com/ for camera-AI-surveillance 
 

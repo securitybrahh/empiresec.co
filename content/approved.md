@@ -58,7 +58,7 @@ lightning
 
 ### Hardware
 
-nokia 8110/2720 flip/800 tough. 
+nokia 8110/2720 flip/800 tough. (whatsapp calling) signal? simplex mysudo? jmp.chat? browser, discord, music, radio, flashlight, mpvKt-jellyfin,newpipe-sponserblock-dislikes, revolt, latent!!!
 
 [Webcam cover](https://amzn.to/4j8gx1b)
 

@@ -58,6 +58,8 @@ lightning
 
 ### Hardware
 
+nokia 8110/2720 flip/800 tough. 
+
 [Webcam cover](https://amzn.to/4j8gx1b)
 
 [USB Data Blocker](https://amzn.to/42KCbTi)

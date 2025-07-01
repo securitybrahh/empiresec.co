@@ -16,6 +16,16 @@ Disappearing Messages
 
 Ultra Privacy Switch
 
+# Country code
+
+# Number
+
+# Display Picture, bio, business profile
+
+# Targetted Ads
+
+# Traffic Analysis / Timing Attacks
+
 ## Businesses & vendors
 
 when you are interacting with a Merchant, only that Business has your data, not Meta/Facebook unless you tag @MetaAI

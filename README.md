@@ -1,3 +1,11 @@
+# Preview
+
+netlify github bot on PR.
+
+https://github.com/marketplace/actions/capture-vercel-preview-url
+
+https://github.com/marketplace/actions/deploy-pr-preview
+
 # Mirrors
 
 ${\textsf{\color{red}CDN}}$ - https://www.empiresec.co/ (github pages) 

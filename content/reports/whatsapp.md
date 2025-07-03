@@ -16,6 +16,26 @@ Disappearing Messages
 
 Ultra Privacy Switch
 
+# Contacts
+
+Graphene OS contact Scopes
+
+# Backup
+
+gdrice e2ee?
+
+3 dots (Settings) > Chats > ${\textsf{\colorsf{green}Backup Now}}$
+
+Place this `/android/media/com.whatsapp/Backups` and activate with same number.
+
+# Storage
+
+/android/media/com.whatsapp
+
+cache
+
+@metAI, Business Merchant, gupshup
+
 # Country code
 
 # Number

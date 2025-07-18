@@ -166,7 +166,7 @@ Gait shoes https://gitlab.com/FG-01/fg-01
     </td>
     <td>
       {{< figure
-        src="images/approved/books/invisiblity.jpg"
+        src="images/approved/books/invisibility.jpg"
         alt="The Art of Invisibility by Kevin Mitnick"
         link="https://amzn.to/3Rddetp"
         class="ma0 w-75"
@@ -192,7 +192,7 @@ Gait shoes https://gitlab.com/FG-01/fg-01
     </td>
     <td>
       {{< figure
-        src="images/approved/books/capitalism.jpg"
+        src="images/approved/books/capitilism.jpg"
         alt="The Age of Surveillance Capitalism by Shoshana Zuboff"
         link="https://amzn.to/4jAI8Il"
         class="ma0 w-75"

@@ -172,6 +172,8 @@ Gait shoes https://gitlab.com/FG-01/fg-01
         class="ma0 w-75"
       >}}
     </td>
+  </tr>
+  <tr>
     <td>
       {{< figure
         src="images/approved/books/jjluna.jpg"
@@ -180,8 +182,6 @@ Gait shoes https://gitlab.com/FG-01/fg-01
         class="ma0 w-75"
       >}}
     </td>
-  </tr>
-  <tr>
     <td>
       {{< figure
         src="images/approved/books/power.jpg"
@@ -198,6 +198,8 @@ Gait shoes https://gitlab.com/FG-01/fg-01
         class="ma0 w-75"
       >}}
     </td>
+  </tr>
+  <tr>
     <td>
       {{< figure
         src="images/approved/books/wires.jpg"
@@ -214,8 +216,6 @@ Gait shoes https://gitlab.com/FG-01/fg-01
         class="ma0 w-75"
       >}}
     </td>
-  </tr>
-  <tr>
     <td>
       {{< figure
         src="images/approved/books/control.jpg"
@@ -224,6 +224,8 @@ Gait shoes https://gitlab.com/FG-01/fg-01
         class="ma0 w-75"
       >}}
     </td>
+  </tr>
+  <tr>
     <td>
       {{< figure
         src="images/approved/books/bazzell.jpg"

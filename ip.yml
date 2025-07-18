@@ -130,9 +130,9 @@ menu:
       name: "About"
       url: /about
       weight: 9
-    - identifier: donate
-      name: "Donate"
-      url: /donate
+    - identifier: Support
+      name: "Support"
+      url: /support
       weight: 10
     - identifier: search
       name: "Search"

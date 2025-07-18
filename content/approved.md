@@ -18,9 +18,11 @@ copywriting as a tool for anonymity.
 
 bitwarden
 
-protonmail,forwardemail, tuta {protonmail/forwardemail doesn't encrypot social graph}
+protonmail
 
-mullvad, ivpn, obscura 
+forwardemail <mailboxes, aliases/vanity domains>, tuta (protonmail doesn't encrypt social graph)
+
+obscura multi party relay
 
 Filen Drive
 
@@ -28,7 +30,7 @@ Proton Docs
 
 orangewebsite, OVH
 
-apple music subscription, cider.sh itch.io version
+apple family music subscription, cider.sh open collective 20$ donation (alpha builds + supporter role on discord) 
 
 https://github.com/superbacked/superbacked
 
@@ -36,29 +38,33 @@ https://nightshade.cs.uchicago.edu/whatis.html
 
 ### Creatives
 
-Softmaker ofice
+Softmaker office
 
 Davinci
 
-blender as after effects
+[blender as after effects] (https://youtube.com/watch?v=nJ1TWyYvgco) 
+
+https://youtube.com/watch?v=tK848ib0BBw
+
+https://youtube.com/playlist?list=PLNShHVjao84dTJDUQA9dPNTGsox16p1iV
 
 [photogimp](https://github.com/Diolinux/PhotoGIMP)
 
-Affinity
+Affinity V2 Universal License
 
 ### Payments
 
 trocador app, cake pay cards, coincards
 
-monero 
+bitcoin silent payments
 
-silent payments
+joinstr.xyz, payjoin
 
 lightning
 
 ### Hardware
 
-nokia 8110/2720 flip/800 tough. (whatsapp calling) signal? simplex mysudo? jmp.chat? browser, discord, music, radio, flashlight, mpvKt-jellyfin,newpipe-sponserblock-dislikes, revolt, latent!!!
+nokia 8110, need to build latent for this lol
 
 [Webcam cover](https://amzn.to/4j8gx1b)
 
@@ -70,7 +76,7 @@ mic condom
 
 flipper zero
 
-DIY Pineapple
+[DIY wifi Pineapple](https://youtube.com/watch?v=udnxagkSzoA) 
 
 black pepper spray
 
@@ -86,21 +92,23 @@ analog alarm
 
 coldcard mk4
 
-bitaxe <d-central>
+bitaxe <d-central> (need to build 90nm Verilog open source sha256 asic's) 
 
 [mudiv2](https://amzn.to/4jobedC), ... maybe mofi 5500
 
-vanilla openwrt router.    Linksys 3200 ACM,? 
+vanilla openwrt router - Linksys 3200 ACM? 
 
 [jmp esim adapter](https://jmp.chat/esim-adapter)
 
-silent . link
+silent.link
 
 [Permanode](https://github.com/ArmanTheParman/Parmanode/pull/157)
 
 trueNAS.com/m-series
 
-macbook, maximum RAM for utm VM's
+m series macbook, maximum RAM for utm VM's, apple containers, qemu VM's.
+
+[Dell Precision 7780](https://github.com/TommyTran732/Precision-7780-Setup)
 
 [latest pixel](https://amzn.to/3G6r5iF), https://pixel-pricing.netlify.app, [GOS support page](https://grapheneos.org/faq#device-support)
 
@@ -108,9 +116,9 @@ macbook, maximum RAM for utm VM's
 
 buskill
 
-Small Safe, [Big safe](https://amzn.to/429njhc), Bank Lockers, vaults,
+Small Safe, [Big safe](https://amzn.to/429njhc), Bank Lockers, Panama atlas vaults.
 
-cameras, alarms, sensors, [home-sec](/projects/home-sec),doorbell,
+cameras <DVR>, alarms, sensors, [home-sec](/projects/home-sec), doorbell (Buding parmanodal HomeSec Addon)
 
 [Shredder](https://amzn.to/3RjH7Z3)
 

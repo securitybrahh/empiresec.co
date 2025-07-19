@@ -22,7 +22,7 @@ protonmail
 
 forwardemail <mailboxes, aliases/vanity domains>, tuta (protonmail doesn't encrypt social graph)
 
-obscura multi party relay
+[obscura](https://obscura.net/#how) [double party relay](https://invisv.com/articles/relay.html), via lightning [socks 5 proxy](https://mullvad.net/en/help/socks5-proxy) foxyproxy, switchyomega, rethinkdns
 
 Filen Drive
 
@@ -63,6 +63,8 @@ joinstr.xyz, payjoin
 lightning
 
 ### Hardware
+
+xbox Series s Dev Mode + Ultimate Gane Pass
 
 nokia 8110, need to build latent for this lol
 

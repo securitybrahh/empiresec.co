@@ -17,7 +17,7 @@ To use WhatsApp as privately as possible:
 5.  Don’t use payments   
 6.  Don’t use the business app, only the consumer app  
 7.  Maybe Don’t use Google e2ee backups (make local backup and move it from android directory to new Mobile)   
-8.  Switch on privacy toggle in each personal chat  
+8.  Switch on "advanced privacy chat" toggle in each personal chat  
 9.  Can use [https://faq.whatsapp.com/764072925284841/](https://faq.whatsapp.com/764072925284841/)
     
 Notes:

@@ -12,7 +12,7 @@ To use WhatsApp as privately as possible:
 
 1.  Don’t invite meta ai bot in groups   
 2.  Switch off notifications  
-3.  Use Graphene OS contact scopes   
+3.  Use Graphene OS contact scopes or don’t give any contact, maybe use inbuilt contacts
 4.  Disable when not using 
 5.  Don’t use payments   
 6.  Don’t use the business app, only the consumer app  

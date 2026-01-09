@@ -8,6 +8,22 @@ author: "Security Brahh"
 description: "state of Encryption on whatsapp"
 ---
 
+To use WhatsApp as privately as possible:
+
+1.  Don’t invite meta ai bot in groups   
+2.  Switch off notifications  
+3.  Use Graphene OS contact scopes   
+4.  Disable when not using 
+5.  Don’t use payments   
+6.  Don’t use the business app, only the consumer app  
+7.  Maybe Don’t use Google e2ee backups (make local backup and move it from android directory to new Mobile)   
+8.  Switch on privacy toggle in each personal chat  
+9.  Can use [https://faq.whatsapp.com/764072925284841/](https://faq.whatsapp.com/764072925284841/)
+    
+Notes:
+
+when you are interacting with a Merchant, only that Business has your data, not Meta/Facebook unless you tag @MetaAI
+
 # state of Encryption on whatsapp
 
 Locked Chats

@@ -72,3 +72,5 @@ https://github.com/srlabs/blue-merle
 install blue-merle > 9esim > silent.link profile, change imei from System > Advanced Settings (LuCi) > Network > blue merle before enabling new Profile (can be done via jmp esim manager)
 
 toggle button > sim on/off
+
+<script src="https://giscus.app/client.js" data-repo="securitybrahh/empiresec.co" data-repo-id="R_kgDOOL5WwA" data-category="General" data-category-id="DIC_kwDOOL5WwM4CpBdp" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="catppuccin_mocha" data-lang="en" data-loading="lazy" crossorigin="anonymous" async> </script>

@@ -23,6 +23,8 @@ for eg, don't use a passport
 
 in India, don't use Aadhar
 
+https://www.phonetravelwiz.com/phone-travel-options/sim-card-registration/
+
 ## defeat the PSTN 
 
 https://www.uctoday.com/unified-communications/bt-group-delays-pstn-switch-off/
@@ -102,5 +104,33 @@ install blue-merle > 9esim > silent.link profile, change imei from System > Adva
 toggle button > sim on/off
 
 ## battery
+
+I always wondered whether having a “virtual number” better than a "normal SIM". Because you can always get prepaid / burner phones.
+
+A virtual number can protect you from local attacks / stringrays. It isn’t attached to an IMEI/ your device or an EID and hopefully no kyc.
+
+But calls and SMS are in plain text anyhow so using sim’s other than, for internet doesn’t make sense. Depending on your country there is of course kyc in getting SIM’s. So just use silent(dot)link?
+
+But in different countries you get Bank OTP’s and other governmental messages through SMS, so you need a bridge. 
+
+That’s where jmp(dot)chat guys come in, but its just US, Canada, and UK numbers for now. I heard Indian authorities don’t allow virtual numbers and there are no burner / prepaid options but you can get a SIP trunk and channels which can cost you $$$ for a shell business, which does not have SMS receiving capabilities…
+
+So depending on your country you maybe out of options.
+
+Atleast you can protect yourself from local attacks by having a phone in some undisclosed location and running an automation that sends the message on your favourite messenger to you.
+
+(Android 16 + iRadio HAL v3 seems promising for downgrading attacks)
+
+But once the message or call uses PSTN, everything is plaintext.
+
+A few countries are switching off / have switched off PSTN, so you wanna check your country’s status.
+
+Some companies are shifting to WhatsApp for Comms, I think that’s way better. Governments and banks should too.
+
+Comment down below what are the options for "VoIP numbers" in your country 👇
+
+## IP
+
+<that Twitter post>
 
 <script src="https://giscus.app/client.js" data-repo="securitybrahh/empiresec.co" data-repo-id="R_kgDOOL5WwA" data-category="General" data-category-id="DIC_kwDOOL5WwM4CpBdp" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="catppuccin_mocha" data-lang="en" data-loading="lazy" crossorigin="anonymous" async> </script>

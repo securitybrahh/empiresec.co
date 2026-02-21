@@ -49,11 +49,17 @@ In Graphene OS:
 
 Network & Internet > SIMs > Select SIM:
 
-{{< figure src="images/setups/avoid_2g.jpg" alt="Avoid 2g Settings in " class="ma0 w-75"
-}}
+{{< figure
+  src="images/setups/avoid_2g.jpg"
+  alt="Avoid 2g Settings in Graphene OS SIMs"
+  class="ma0 w-75"
+>}}
 
-{{< figure src="images/setups/5g_or_LTE_ony.jpg" alt="AML In Crypto Friendly Banks" class="ma0 w-75"
-}}
+{{< figure
+  src="images/setups/5g_or_LTE_only.jpg"
+  alt="Avoid downgrade attacks in Graphene OS SIMs"
+  class="ma0 w-75"
+>}}
 
 # gl-inet mudiV2 (gl-e750v2)
 

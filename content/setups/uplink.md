@@ -1,6 +1,6 @@
 ---
 title: "Phone Number and the internet"
-date: 2026-02-21T13:54:52Z
+date: 2026-02-21T00:00:52Z
 # weight: 1
 aliases: ["/uplink"]
 tags: ["number", "privacy", "security", "Internet", "router"]

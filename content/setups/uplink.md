@@ -17,6 +17,12 @@ draft: false
 
 ## KYC
 
+if you have to buy a sim with kyc, buy it with an ID that makes it difficult to centralize tracking
+
+for eg, don't use a passport
+
+in India, don't use Aadhar
+
 ## defeat the PSTN 
 
 https://www.uctoday.com/unified-communications/bt-group-delays-pstn-switch-off/
@@ -27,7 +33,21 @@ https://business.bt.com/why-choose-bt/insights/ip-technology/ip-what-we-can-lear
 
 https://www.mila.is/um-milu/frettasafn/nidurlagning-koparheimtaugakerfis-milu
 
+## SIM Swap
+
+have 2fa with your operator
+
+## SIM opsec
+
+1. sim for banking
+2. sim for gov ID
+3. sim for others
+
+## SIM Lock
+
 jmp.chat
+
+https://letters.empiresec.co/p/number
 
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Showing off the soon-to-be-released in-app onboarding flow for JMP from Cheogram Android, including setting up a Snikket instance! <a href="https://twitter.com/JMP_chat/status/1648413895357235203/video/1">pic.twitter.com/xcXLG8muVR</a></p>&mdash; JMP (@JMP_chat) <a href="https://twitter.com/JMP_chat/status/1648413895357235203/video/1">April 18, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 

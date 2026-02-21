@@ -11,6 +11,12 @@ draft: false
 
 # Phone Number and Internet Connectivity
 
+## Online Identity
+
+Its far better to have an American Identity on the internet as services will treat you better and US laws are somewhat forgiving.
+
+so jmp.chat is nice
+
 ## Local Attacks
 
 ## Location

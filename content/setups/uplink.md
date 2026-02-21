@@ -11,6 +11,8 @@ draft: false
 
 # Phone Number and Internet Connectivity
 
+## VPN on the router
+
 ## Online Identity
 
 Its far better to have an American Identity on the internet as services will treat you better and US laws are somewhat forgiving.
@@ -156,5 +158,11 @@ https://github.com/Mygod/VPNHotspot
 then
 
 https://codeberg.org/luxferre/lexipwn
+
+## Starlink?
+
+having a buffer router is the way to go. 
+
+https://letters.empiresec.co/p/starlink
 
 <script src="https://giscus.app/client.js" data-repo="securitybrahh/empiresec.co" data-repo-id="R_kgDOOL5WwA" data-category="General" data-category-id="DIC_kwDOOL5WwM4CpBdp" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="catppuccin_mocha" data-lang="en" data-loading="lazy" crossorigin="anonymous" async> </script>

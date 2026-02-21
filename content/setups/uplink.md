@@ -49,11 +49,13 @@ In Graphene OS:
 
 Network & Internet > SIMs > Select SIM:
 
-{{< figure src="images/setups/avoid_2g.jpg" alt="Avoid 2g Settings in " class="ma0 w-75"}}
+{{< figure src="images/setups/avoid_2g.jpg" alt="Avoid 2g Settings in " class="ma0 w-75"
+}}
 
-{{< figure src="images/setups/5g_or_LTE_ony.jpg" alt="AML In Crypto Friendly Banks" class="ma0 w-75"}}
+{{< figure src="images/setups/5g_or_LTE_ony.jpg" alt="AML In Crypto Friendly Banks" class="ma0 w-75"
+}}
 
-gl-inet mudiV2 (gl-e750v2)
+# gl-inet mudiV2 (gl-e750v2)
 
 https://docs.gl-inet.com/router/en/4/faq/repair_network_or_reset_firmware/
 
@@ -72,5 +74,7 @@ https://github.com/srlabs/blue-merle
 install blue-merle > 9esim > silent.link profile, change imei from System > Advanced Settings (LuCi) > Network > blue merle before enabling new Profile (can be done via jmp esim manager)
 
 toggle button > sim on/off
+
+## battery
 
 <script src="https://giscus.app/client.js" data-repo="securitybrahh/empiresec.co" data-repo-id="R_kgDOOL5WwA" data-category="General" data-category-id="DIC_kwDOOL5WwM4CpBdp" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="catppuccin_mocha" data-lang="en" data-loading="lazy" crossorigin="anonymous" async> </script>

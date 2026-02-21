@@ -11,9 +11,47 @@ draft: false
 
 # Phone Number and Internet Connectivity
 
+## Local Attacks
+
+## Location
+
+## KYC
+
+## defeat the PSTN 
+
+https://www.uctoday.com/unified-communications/bt-group-delays-pstn-switch-off/
+
+https://www.yay.com/blog/voip/global-pstn-switchoff-learnings/
+
+https://business.bt.com/why-choose-bt/insights/ip-technology/ip-what-we-can-learn/
+
+https://www.mila.is/um-milu/frettasafn/nidurlagning-koparheimtaugakerfis-milu
+
 jmp.chat
 
-<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Showing off the soon-to-be-released in-app onboarding flow for JMP from Cheogram Android, including setting up a Snikket instance! <a href="https://t.co/xcXLG8muVR">pic.twitter.com/xcXLG8muVR</a></p>&mdash; JMP (@JMP_chat) <a href="https://twitter.com/JMP_chat/status/1648413895357235203?ref_src=twsrc%5Etfw">April 18, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Showing off the soon-to-be-released in-app onboarding flow for JMP from Cheogram Android, including setting up a Snikket instance! <a href="https://twitter.com/JMP_chat/status/1648413895357235203/video/1">pic.twitter.com/xcXLG8muVR</a></p>&mdash; JMP (@JMP_chat) <a href="https://twitter.com/JMP_chat/status/1648413895357235203/video/1">April 18, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+https://www.9esim.com/product/strengthen-package/
+
+https://www.wired.com/story/5g-security-stingray-surveillance/
+
+https://zetier.com/5g-imsi-catcher/
+
+https://www.eff.org/pages/cell-site-simulatorsimsi-catchers
+
+https://en.wikipedia.org/wiki/Public_switched_telephone_network
+
+https://an.dywa.ng/carrier-gnss.html
+
+https://github.com/srlabs/blue-merle/blob/main/Documentation.pdf
+
+In Graphene OS:
+
+Network & Internet > SIMs > Select SIM:
+
+{{< figure src="images/setups/avoid_2g.jpg" alt="Avoid 2g Settings in " class="ma0 w-75"}}
+
+{{< figure src="images/setups/5g_or_LTE_ony.jpg" alt="AML In Crypto Friendly Banks" class="ma0 w-75"}}
 
 gl-inet mudiV2 (gl-e750v2)
 

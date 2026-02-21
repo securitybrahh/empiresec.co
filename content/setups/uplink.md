@@ -13,6 +13,16 @@ draft: false
 
 ## VPN on the router
 
+## What is not a "VoIP" number
+
+worldwide the copper is being replaced by fibre and with it, everything is TLS. So VoIP is basically all numbers rn and systems test for "good" carriers.
+
+https://www.freecarrierlookup.com
+
+if a Product or a service's DB thinks that your number is from a good carrier, the services allow that number.
+
+but mostly the Phone Numbers are being allocated on servers and fibre, note the PSTN is still copper i. e. free text. 
+
 ## Online Identity
 
 Its far better to have an American Identity on the internet as services will treat you better and US laws are somewhat forgiving.

@@ -6,6 +6,7 @@ aliases: ["/uplink"]
 tags: ["number", "privacy", "security", "Internet", "router"]
 author: "Security Brahh"
 description: "state of Encryption on whatsapp"
+draft: false
 ---
 
 # Phone Number and Internet Connectivity

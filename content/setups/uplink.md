@@ -131,6 +131,24 @@ Comment down below what are the options for "VoIP numbers" in your country 👇
 
 ## IP
 
-<that Twitter post>
+> that Twitter post
+
+## eSIM "server"
+
+https://discuss.privacyguides.net/t/privacy-differences-between-esim-vs-physical-sim/32629/4
+
+## VpnHotspot
+
+Graphene OS then 
+
+https://projectblack.io/blog/google-pixel-root-guide/
+
+then 
+
+https://github.com/Mygod/VPNHotspot
+
+then
+
+https://codeberg.org/luxferre/lexipwn
 
 <script src="https://giscus.app/client.js" data-repo="securitybrahh/empiresec.co" data-repo-id="R_kgDOOL5WwA" data-category="General" data-category-id="DIC_kwDOOL5WwM4CpBdp" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="catppuccin_mocha" data-lang="en" data-loading="lazy" crossorigin="anonymous" async> </script>

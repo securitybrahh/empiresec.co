@@ -65,6 +65,97 @@ have 2fa with your operator
 
 ## SIM Lock
 
+## IMEI
+
+Should you change your IMEI on your devices?
+
+GOS says you shouldn't because there are other carrier metadata that if not aligned to the IMEI, the device becomes more identifiable and raise some eyebrows. I beg to differ.
+
+Most modems lock the capability to change the IMEI. Contrary to popular opinion on the internet, changing imei isn't something countries have made laws against.
+
+I am pretty sure in USA, it's legal, and reading other countries' particular laws, there is not really a mention of IMEI spoofing.
+
+There are a very small number of devices in which you can issue "AT" commands to change the IMEI. eg mudiV2 router with blue-merle, google pixels with samsung exynos modems (pixel 6 and above), some other routers.
+
+IMEI is a 15 digit number that identifies your mobile, more precisely your mobile's modem which is issued by a regulatory body like gsma.
+
+The first 8 digits is a TAC code which identifies brand, model, manufacturing origin, and network capabilities. The last digit is the Luhn check digit, which is used for integrity check. The middle digits is a serial number often allotted by the manufacturer.
+
+To produce a viable IMEI for a device you need its TAC and the Luhn algorithm.
+
+Luhn algo is in public domain but you need a TAC database or at least your device's TAC. (Which you can find from the stock IMEI which you should write it down somewhere for safe keeping or when/if you want to return to stock IMEI for whatever reasons)
+
+You can use a generator like imei(dot)info or create your own program/do it with hand.
+
+Changing IMEI basically erases your past history, which sim's you used, when you used them, also if you bought the device with your legal name, somewhere that record is also stored.
+
+But changing your IMEI frequently can alert the carrier operator and trace your IMSI. IMSI is the ID given by the carrier network to the device. IMSI is linked to the billing details & kyc. a SIM is practically eCCID + IMSI.
+
+SIM manufacturers give the chip an eccid, while the carrier gives it imsi. IMSI is a permanent number attached to your sim but carrier networks often use tmsi which is temporary.
+
+What ICCID is to a sim card, EID is to an eSim.  An eSim profile contains the IMSI and other data to connect to the carrier.
+
+So what you want to do is this: change imei per eid for a particular IMSI.
+
+Dispose off the EID, dispose off the profile, change IMEI and get new eSim Adapter, and a new profile from time to time. 
+
+The main problem is, using an imei that another device is using in the same carrier. The probability of that happening is pretty low (see Appendix) 
+
+But ensure that you are using a device that is being used by a lot of people to have a crowd to hide in.
+
+Appendix A: Probability of IMEI collision
+
+The probability of imei collision is basically proportional to 1/(100,000 - the number of your model's sold.)
+
+But kindly note if the number of the same model sold approaches 100,000, the brand will probably ask for a new TAC.
+
+So the graph is highly zoomed in on the y axis and value ranges from 0 to 1 , the first value is 1/100,000 and increase expenonentially till there is new issue of TAC then again it will start at 1/100,000.
+
+Also note that for probability to be 0.001 the number of devices needs to be 99,000.
+
+So you have less than a 1 in a thousand chance for x < 99,000.
+
+And it would be okay to assume after that point, a new TAC will be issued.
+
+So we prove for most cases IMEI collision is miniscule.
+
+Appendix B:
+
+MSISDN is a code made with your country code and your mobile number. MSISDN is basically the parameter through which the packets are transmitted to the correct destination.
+
+https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity
+
+## IP
+
+Which IP address should you choose?
+
+Mobile v. WiFi
+
+The public don't see your IP address, they can only see ISP's internal LAN's IP.
+
+Your internal IP changes in both Mobile and WiFi, because most residential connections are dynamic not static.
+
+Mobile's IP changes more, because well, it has to connect to the nearest tower, so if you are travelling, the connection gets reset and your IP changes more frequently.
+
+On the other hand, WiFi's IP may not change for days if you don't switch on/off it, ISP may reset it from their end if they want but the IP usually changes whenever the router restarts.
+
+in WiFi's case, your home address is basically doxxed by the ISP.
+
+But if you use a cafe or McDonald or airport WiFi or whatever, it's very difficult to pinpoint where you are - the Wifi can only give them a Spherical region where you can be.
+
+On the other hand, If you are using a mobile IP, its way easier to pinpoint your location because towers can triangulate.
+
+But in the case of mobile, they track through IMEI & IMSI not the IP. 
+
+Change those from time to time.
+
+Clearly public WiFi's are better than mobile but if you are buying a Proxy, then the reverse is true.
+
+in mobiles, they can pinpoint you but they may never know who you are, in public WiFi, they can identify you because, remember, the IP is static there.
+
+Also don't give PII to public WiFi onboarding lol. Static IP + kyc - > they have your identity.
+
+##
 jmp.chat
 
 https://letters.empiresec.co/p/number
@@ -150,6 +241,9 @@ Comment down below what are the options for "VoIP numbers" in your country 👇
 ## IP
 
 > that Twitter post
+> 
+
+
 
 ## eSIM "server"
 

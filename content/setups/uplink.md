@@ -51,6 +51,10 @@ https://github.com/Blockchain-Powered-eSIM/OpenRSP
 
 https://discuss.privacyguides.net/t/travel-esims-secretly-route-traffic-over-chinese-and-undisclosed-networks-study/30277
 
+https://discuss.privacyguides.net/t/data-only-esim-provider-local-ip-breakout/34542
+
+## Emergency Calls
+
 ## Online Identity
 
 Its far better to have an American Identity on the internet as services will treat you better and US laws are somewhat forgiving.

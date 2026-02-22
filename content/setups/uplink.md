@@ -13,6 +13,8 @@ draft: false
 
 ## VPN on the router
 
+## Zero Click?
+
 ## What is not a "VoIP" number
 
 worldwide the copper is being replaced by fibre and with it, everything is TLS. So VoIP is basically all numbers rn and systems test for "good" carriers.

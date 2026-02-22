@@ -54,6 +54,8 @@ https://discuss.privacyguides.net/t/travel-esims-secretly-route-traffic-over-chi
 https://discuss.privacyguides.net/t/data-only-esim-provider-local-ip-breakout/34542
 
 https://discuss.privacyguides.net/t/issue-with-no-kyc-esim-provider/34792/3
+
+https://discuss.privacyguides.net/t/experience-with-silent-link/19242/14
 ## Emergency Calls
 
 ## Online Identity

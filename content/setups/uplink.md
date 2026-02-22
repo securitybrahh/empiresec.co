@@ -235,6 +235,18 @@ Network & Internet > SIMs > Select SIM:
 
 # gl-inet mudiV2 (gl-e750v2)
 
+from:@GrapheneOS hotspot
+
+https://x.com/GrapheneOS/status/1946230891648254445?s=19
+
+https://x.com/GrapheneOS/status/1905844919287112181
+
+https://x.com/GrapheneOS/status/1753329219407331488
+
+https://x.com/GrapheneOS/status/2004699245606220207
+
+https://x.com/GrapheneOS/status/1846712535480774794
+
 https://docs.gl-inet.com/router/en/4/faq/repair_network_or_reset_firmware/
 
 https://github.com/openwrt/luci/wiki/Documentation

@@ -27,7 +27,15 @@ https://www.freecarrierlookup.com
 
 if a Product or a service's DB thinks that your number is from a good carrier, the services allow that number.
 
+More heuristics maybe at play because one number may work as non-VoIP and other may not from same carrier, maybe area codes at play also.
+
 but mostly the Phone Numbers are being allocated on servers and fibre, note the PSTN is still copper i. e. free text. 
+
+https://help.cloaked.app/hc/en-us/articles/11841989344404-How-do-Phone-Calls-and-Text-Messages-Work
+
+https://help.cloaked.app/hc/en-us/articles/20683558341780-Why-do-some-sites-reject-Cloaked-numbers
+
+https://help.cloaked.app/hc/en-us/articles/20373440034708-Why-can-t-I-verify-my-phone-numbers-on-some-websites
 
 ## how does an esim Functions?
 
@@ -46,6 +54,8 @@ https://discuss.privacyguides.net/t/a-new-anonymous-phone-carrier-lets-you-sign-
 https://discuss.privacyguides.net/t/anyone-here-tried-pikasim-for-anonymous-esims-legit-or-not/33760
 
 https://discuss.privacyguides.net/t/virtual-phone-number-for-graphene-os-user-no-esim/33367/6
+
+https://wiki.soprani.ca/EuropeanNumberProviders
 
 ## Database of per-country code "VoIP" Provider
 

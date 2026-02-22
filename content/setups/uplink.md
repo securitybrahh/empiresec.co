@@ -35,6 +35,12 @@ once the esim is provisioned, the adapter functions like a normal sim, IMEI of t
 
 https://discuss.privacyguides.net/t/anyone-here-tried-pikasim-for-anonymous-esims-legit-or-not/33760
 
+## eSIM vulnerabilities? 
+
+https://discuss.privacyguides.net/t/need-help-the-vulnerability-of-esim-this-bad/35209
+
+https://github.com/Blockchain-Powered-eSIM/OpenRSP
+
 ## Online Identity
 
 Its far better to have an American Identity on the internet as services will treat you better and US laws are somewhat forgiving.

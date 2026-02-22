@@ -11,6 +11,10 @@ draft: false
 
 # Phone Number and Internet Connectivity
 
+## no SIM
+
+https://www.youtube.com/watch?v=4Dei2buz1X0
+
 ## VPN on the router
 
 ## Zero Click?
@@ -46,6 +50,8 @@ https://discuss.privacyguides.net/t/virtual-phone-number-for-graphene-os-user-no
 https://discuss.privacyguides.net/t/mobile-internet-options/19080
 
 ## eSIM vulnerabilities? 
+
+https://youtube.com/watch?v=1cEMUlrpu7o
 
 https://discuss.privacyguides.net/t/need-help-the-vulnerability-of-esim-this-bad/35209
 
@@ -273,9 +279,17 @@ Some companies are shifting to WhatsApp for Comms, I think that’s way better. 
 
 Comment down below what are the options for "VoIP numbers" in your country 👇
 
+## Identity
+
+
+
 ## Voice
 
 voNR (SA and NSA) > voWifi? 
+
+https://en.wikipedia.org/wiki/List_of_5G_NR_networks
+
+https://en.wikipedia.org/wiki/Voice_over_NR
 
 {{< figure
   src="images/setups/voice_overrides.jpg"
@@ -284,6 +298,14 @@ voNR (SA and NSA) > voWifi?
 >}}
 
 ## SMS
+
+https://www.youtube.com/watch?v=miXRoy-5LLo
+
+https://www.macrumors.com/2026/02/16/ios-26-4-rcs-encryption-testing/
+
+https://www.privacyguides.org/news/2026/02/19/apple-introduces-end-to-end-encrypted-rcs-messaging-in-the-ios-26-4-beta/
+
+https://discuss.privacyguides.net/t/apple-will-soon-support-encrypted-rcs-messaging-with-android-users/25804/7
 
 https://www.wired.com/story/5g-security-stingray-surveillance/
 
@@ -314,5 +336,11 @@ https://codeberg.org/luxferre/lexipwn
 having a buffer router is the way to go. 
 
 https://letters.empiresec.co/p/starlink
+
+## Addendum A: Videos
+
+https://www.youtube.com/watch?v=wVyu7NB7W6Y
+
+
 
 <script src="https://giscus.app/client.js" data-repo="securitybrahh/empiresec.co" data-repo-id="R_kgDOOL5WwA" data-category="General" data-category-id="DIC_kwDOOL5WwM4CpBdp" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="catppuccin_mocha" data-lang="en" data-loading="lazy" crossorigin="anonymous" async> </script>

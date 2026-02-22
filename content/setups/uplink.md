@@ -281,7 +281,13 @@ Comment down below what are the options for "VoIP numbers" in your country 👇
 
 ## Identity
 
+global sim identifier: 
 
+{{< figure
+  src="images/setups/number_identity.jpg"
+  alt="phone number identifier"
+  class="ma0 w-75"
+>}}
 
 ## Voice
 
@@ -298,6 +304,10 @@ https://en.wikipedia.org/wiki/Voice_over_NR
 >}}
 
 ## SMS
+
+https://news.ycombinator.com/item?id=43813083
+
+https://alternativeto.net/news/2024/9/meta-to-integrate-whatsapp-and-messenger-with-third-party-chats-in-eu-to-comply-with-dma/
 
 https://www.youtube.com/watch?v=miXRoy-5LLo
 

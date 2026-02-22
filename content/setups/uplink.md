@@ -30,6 +30,11 @@ https://discuss.privacyguides.net/t/what-is-a-jmp-chat-esim-adapter/19165/14
 In the case of an esim adapter, the provisioning of esim profile takes place over the internet, lpac gets the profile from sm-dp+ server by feeding the EID and IMSI.
 
 once the esim is provisioned, the adapter functions like a normal sim, IMEI of the modem and IMSI of the sim is used to communicate with the carrier.
+
+## Pricing
+
+https://discuss.privacyguides.net/t/anyone-here-tried-pikasim-for-anonymous-esims-legit-or-not/33760
+
 ## Online Identity
 
 Its far better to have an American Identity on the internet as services will treat you better and US laws are somewhat forgiving.

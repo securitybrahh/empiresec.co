@@ -41,11 +41,15 @@ https://discuss.privacyguides.net/t/virtual-phone-number-for-graphene-os-user-no
 
 > github link like bank reports GOS
 
+https://discuss.privacyguides.net/t/mobile-internet-options/19080
+
 ## eSIM vulnerabilities? 
 
 https://discuss.privacyguides.net/t/need-help-the-vulnerability-of-esim-this-bad/35209
 
 https://github.com/Blockchain-Powered-eSIM/OpenRSP
+
+https://discuss.privacyguides.net/t/travel-esims-secretly-route-traffic-over-chinese-and-undisclosed-networks-study/30277
 
 ## Online Identity
 

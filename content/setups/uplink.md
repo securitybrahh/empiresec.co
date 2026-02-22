@@ -203,12 +203,6 @@ smspool.net
 
 https://www.9esim.com/product/strengthen-package/
 
-https://www.wired.com/story/5g-security-stingray-surveillance/
-
-https://zetier.com/5g-imsi-catcher/
-
-https://www.eff.org/pages/cell-site-simulatorsimsi-catchers
-
 https://en.wikipedia.org/wiki/Public_switched_telephone_network
 
 https://an.dywa.ng/carrier-gnss.html
@@ -277,12 +271,23 @@ Some companies are shifting to WhatsApp for Comms, I think that’s way better. 
 
 Comment down below what are the options for "VoIP numbers" in your country 👇
 
-## IP
+## Voice
 
-> that Twitter post
-> 
+voNR (SA and NSA) > voWifi? 
 
+{{< figure
+  src="images/setups/voice_overrides.jpg"
+  alt="Voice Overrides in Graphene OS"
+  class="ma0 w-75"
+>}}
 
+## SMS
+
+https://www.wired.com/story/5g-security-stingray-surveillance/
+
+https://zetier.com/5g-imsi-catcher/
+
+https://www.eff.org/pages/cell-site-simulatorsimsi-catchers
 
 ## eSIM "server"
 

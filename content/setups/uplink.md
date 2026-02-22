@@ -33,9 +33,13 @@ but mostly the Phone Numbers are being allocated on servers and fibre, note the 
 
 https://discuss.privacyguides.net/t/what-is-a-jmp-chat-esim-adapter/19165/14
 
-In the case of an esim adapter, the provisioning of esim profile takes place over the internet, lpac gets the profile from sm-dp+ server by feeding the EID and IMSI.
+In the case of an esim adapter, the provisioning of esim profile takes place over the internet, lpac gets the profile from rsp server like G+D, IDEMIA, thales, by feeding the EID and IMSI gotten from sm-dp+ server hostname in the esim QR code.
 
 once the esim is provisioned, the adapter functions like a normal sim, IMEI of the modem and IMSI of the sim is used to communicate with the carrier.
+
+## A new carrier doesn't solve anything
+
+https://discuss.privacyguides.net/t/a-new-anonymous-phone-carrier-lets-you-sign-up-with-nothing-but-a-zip-code/33561/13
 
 ## Pricing
 
@@ -235,6 +239,10 @@ Network & Internet > SIMs > Select SIM:
 
 # gl-inet mudiV2 (gl-e750v2)
 
+https://dl.gl-inet.com/router/e750/beta
+
+5.10.176 kernel https://lwn.net/Articles/926874/
+
 from:@GrapheneOS hotspot
 
 https://x.com/GrapheneOS/status/1946230891648254445?s=19
@@ -362,6 +370,8 @@ https://letters.empiresec.co/p/starlink
 ## Addendum A: Videos
 
 https://www.youtube.com/watch?v=wVyu7NB7W6Y
+
+
 
 
 

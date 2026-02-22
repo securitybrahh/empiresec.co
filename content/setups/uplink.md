@@ -68,6 +68,7 @@ https://discuss.privacyguides.net/t/data-only-esim-provider-local-ip-breakout/34
 https://discuss.privacyguides.net/t/issue-with-no-kyc-esim-provider/34792/3
 
 https://discuss.privacyguides.net/t/experience-with-silent-link/19242/14
+
 ## Emergency Calls
 
 ## Online Identity
@@ -324,6 +325,10 @@ https://en.wikipedia.org/wiki/Voice_over_NR
 >}}
 
 ## SMS
+
+https://support.apple.com/en-us/104972
+
+e2ee-rcs is an unspecified extension by Google, works only on google's servers, imessage gateway to rcs, apple gets plaintext maybe
 
 https://news.ycombinator.com/item?id=43813083
 

@@ -35,6 +35,12 @@ once the esim is provisioned, the adapter functions like a normal sim, IMEI of t
 
 https://discuss.privacyguides.net/t/anyone-here-tried-pikasim-for-anonymous-esims-legit-or-not/33760
 
+https://discuss.privacyguides.net/t/virtual-phone-number-for-graphene-os-user-no-esim/33367/6
+
+## Database of per-country code "VoIP" Provider
+
+> github link like bank reports GOS
+
 ## eSIM vulnerabilities? 
 
 https://discuss.privacyguides.net/t/need-help-the-vulnerability-of-esim-this-bad/35209
@@ -177,6 +183,10 @@ Also don't give PII to public WiFi onboarding lol. Static IP + kyc - > they have
 jmp.chat
 
 https://letters.empiresec.co/p/number
+
+## one-time verification
+
+smspool.net
 
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Showing off the soon-to-be-released in-app onboarding flow for JMP from Cheogram Android, including setting up a Snikket instance! <a href="https://twitter.com/JMP_chat/status/1648413895357235203/video/1">pic.twitter.com/xcXLG8muVR</a></p>&mdash; JMP (@JMP_chat) <a href="https://twitter.com/JMP_chat/status/1648413895357235203/video/1">April 18, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 

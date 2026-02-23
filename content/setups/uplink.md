@@ -5,11 +5,861 @@ date: 2026-02-21T00:00:52Z
 aliases: ["/uplink"]
 tags: ["number", "privacy", "security", "Internet", "router"]
 author: "Security Brahh"
-description: "state of Encryption on whatsapp"
+description: "Threat modeling phone numbers, SIMs, IMEI, and internet connectivity"
 draft: false
 ---
 
 # Phone Number and Internet Connectivity
+
+Modern telephony is no longer copper-bound.  
+Everything is IP-backed, database-controlled, and identity-scored.
+
+Your “phone number” is:
+
+- A database entry
+- Linked to an IMSI
+- Routed via IP infrastructure
+- Reputation-scored by online services
+
+This document threat-models the full stack.
+
+---
+
+# 1. Identity Stack Diagram
+
+Below is the real identity chain inside mobile networks:
+
+            ┌──────────────────────────┐
+            │        MSISDN            │
+            │  (Your Phone Number)     │
+            └─────────────┬────────────┘
+                          │
+                          ▼
+            ┌──────────────────────────┐
+            │          IMSI            │
+            │  (Subscriber Identity)   │
+            └─────────────┬────────────┘
+                          │
+                          ▼
+            ┌──────────────────────────┐
+            │          ICCID           │
+            │  (Physical SIM ID)       │
+            └─────────────┬────────────┘
+                          │
+                          ▼
+            ┌──────────────────────────┐
+            │          EID             │
+            │  (eSIM Chip ID)          │
+            └─────────────┬────────────┘
+                          │
+                          ▼
+            ┌──────────────────────────┐
+            │          IMEI            │
+            │  (Device Modem ID)       │
+            └─────────────┬────────────┘
+                          │
+                          ▼
+            ┌──────────────────────────┐
+            │        Cell Tower        │
+            └─────────────┬────────────┘
+                          │
+                          ▼
+            ┌──────────────────────────┐
+            │      Carrier Core        │
+            └─────────────┬────────────┘
+                          │
+                          ▼
+            ┌──────────────────────────┐
+            │        Internet          │
+            └──────────────────────────┘
+
+
+Key Reality:
+
+- The network primarily tracks **IMSI**
+- The device is identified by **IMEI**
+- The number (MSISDN) is just a routing alias
+
+Changing one layer does not remove linkage unless aligned with other layers.
+
+---
+
+# 2. eSIM Provisioning Flow Diagram
+
+User scans QR Code
+│
+▼
+SM-DP+ Server (Profile Server)
+│
+│ (EID identifies eSIM chip)
+▼
+Profile Downloaded
+│
+│ (Profile contains IMSI + carrier data)
+▼
+eSIM Activated
+│
+▼
+Modem authenticates using:
+IMEI + IMSI
+
+
+Important:
+
+- EID identifies the eSIM hardware
+- IMSI identifies the subscriber
+- IMEI identifies the modem
+- MSISDN maps to IMSI in carrier database
+
+---
+
+# 3. Threat Model Matrix
+
+Below is a structured comparison of common connectivity models.
+
+## Legend
+
+- ✅ = Strong advantage  
+- ⚠️ = Partial / situational  
+- ❌ = Weak / exposed  
+
+---
+
+## A. Physical SIM (KYC)
+
+| Threat Vector | Exposure Level | Notes |
+|---------------|---------------|-------|
+| Carrier tracking | ❌ High | IMSI tied to legal ID |
+| IMEI logging | ❌ High | Historical device mapping |
+| SIM swap risk | ⚠️ Medium | Mitigated with carrier PIN |
+| Stingray attacks | ❌ High | Radio-layer exposure |
+| SMS interception | ❌ High | Plaintext at interconnect |
+| Service acceptance | ✅ High | Trusted as “mobile” |
+| Anonymity | ❌ Very Low | KYC-bound |
+
+---
+
+## B. eSIM (KYC)
+
+| Threat Vector | Exposure Level | Notes |
+|---------------|---------------|-------|
+| Carrier tracking | ❌ High | Same as physical SIM |
+| Remote provisioning attack | ⚠️ Medium | SM-DP+ trust dependent |
+| IMEI logging | ❌ High | Same baseband behavior |
+| Profile rotation | ⚠️ Possible | If new IMSI issued |
+| Service acceptance | ✅ High | Appears as mobile |
+| Anonymity | ❌ Low | Usually KYC |
+
+---
+
+## C. Data-only eSIM + VoIP Number
+
+| Threat Vector | Exposure Level | Notes |
+|---------------|---------------|-------|
+| Carrier subscriber identity | ⚠️ Medium | Data IMSI separate from voice |
+| IMEI linkage | ⚠️ Medium | Still visible to carrier |
+| Stingray exposure | ⚠️ Medium | Data-only still attaches to tower |
+| SMS plaintext | ⚠️ Depends | VoIP SMS often routed via SIP |
+| Service rejection | ❌ High | Often flagged as VoIP |
+| KYC requirements | ⚠️ Depends | Jurisdiction-specific |
+| Local radio identity | ❌ Present | Still cellular |
+
+---
+
+## D. Public WiFi + Virtual Number
+
+| Threat Vector | Exposure Level | Notes |
+|---------------|---------------|-------|
+| Carrier tracking | ✅ None | No SIM attached |
+| IMSI exposure | ✅ None | Airplane mode possible |
+| IP logging | ❌ High | WiFi operator logs |
+| Physical attribution | ⚠️ Moderate | CCTV + time correlation |
+| Service rejection | ❌ Medium | VoIP flagged often |
+| Local radio attack | ✅ None | No baseband usage |
+| SMS plaintext | ⚠️ Depends | VoIP routing path |
+
+---
+
+## E. Home WiFi + VPN Router
+
+| Threat Vector | Exposure Level | Notes |
+|---------------|---------------|-------|
+| ISP attribution | ❌ High | ISP knows address |
+| Public IP visibility | ✅ Low | VPN masks exit |
+| IMSI exposure | ✅ None | If no SIM used |
+| Metadata logging | ⚠️ VPN dependent | Trust shifts to VPN |
+| Service acceptance | ⚠️ Depends | VPN IP reputation |
+| Physical location leakage | ❌ High | Subscriber tied to address |
+
+---
+
+# 4. Identity Rotation Strategy Matrix
+
+| Strategy | Effective Against | Ineffective Against | Risk |
+|----------|-------------------|--------------------|------|
+| Change IMEI only | Historical device linkage | IMSI tracking | Carrier anomaly detection |
+| Change IMSI only | Subscriber history | IMEI logging | KYC persistence |
+| Change EID only | eSIM hardware trace | Carrier logs | Minimal benefit |
+| Rotate IMEI + IMSI + EID | Long-term carrier correlation | Real-world surveillance | Operational complexity |
+| Use virtual number | Radio-layer attacks | Database scoring | Service rejection |
+| Remove SIM entirely | IMSI tracking | IP attribution | WiFi logs |
+
+---
+
+# 5. Attack Surface Summary
+
+## Radio Layer Risks
+- IMSI catchers
+- Downgrade attacks (2G)
+- Baseband exploits
+- Tower triangulation
+
+Mitigation:
+- Disable 2G
+- Force LTE/5G only
+- Keep baseband updated
+- Airplane mode when possible
+
+---
+
+## Network Layer Risks
+- ISP logging
+- VPN logging
+- Public WiFi logging
+- IP reputation scoring
+
+Mitigation:
+- Router-level VPN
+- IP rotation
+- Avoid KYC-bound WiFi portals
+
+---
+
+## Application Layer Risks
+- SMS OTP
+- SIM swap
+- Account recovery abuse
+- Metadata correlation
+
+Mitigation:
+- Hardware security keys
+- TOTP instead of SMS
+- Compartmentalized SIM roles
+
+---
+
+# 6. Core Insight
+
+There is no magic SIM.  
+There is no magic carrier.  
+There is no magic IMEI trick.
+
+There are only tradeoffs between:
+
+- Metadata exposure
+- Legal identity binding
+- Radio-layer visibility
+- Platform trust heuristics
+- Operational complexity
+
+Privacy comes from:
+
+- Compartmentalization
+- Minimization
+- Jurisdiction awareness
+- Removing SMS as root identity
+- Aligning identifier rotation correctly
+
+Everything else is optimization.
+
+---
+
+# Optional Additions
+
+Future expansions could include:
+
+- Probability modeling of IMEI collision
+- Carrier fraud scoring mechanisms
+- Detailed RCS vs SMS trust boundary diagram
+- Lawful intercept architecture overview
+- Stingray protocol flow breakdown
+
+
+Phone Number and Internet Connectivity
+
+The modern phone number is no longer what people think it is.
+
+Copper is being replaced by fibre. The traditional PSTN is being phased out in many countries. Nearly everything is now IP-based, routed over TLS at some layer, and provisioned via centralized servers.
+
+Your “phone number” is no longer tied to a wire — it’s tied to databases.
+
+1. No SIM, No Problem?
+
+A device without a SIM:
+
+Cannot attach to a carrier network
+
+Cannot expose IMSI
+
+Cannot be triangulated by cell towers
+
+Still connects over Wi-Fi
+
+This reduces mobile-layer exposure but does not make you anonymous. Your identity moves to:
+
+IP address
+
+Device fingerprint
+
+Accounts
+
+Behavioral patterns
+
+Removing a SIM removes radio identity, not network identity.
+
+2. VPN on the Router
+
+Running a VPN at the router level (e.g. GL.iNet Mudi V2) provides:
+
+Network-wide tunneling
+
+IP masking for all connected devices
+
+Device-level isolation
+
+However:
+
+Carrier still sees IMSI + IMEI
+
+VPN provider sees exit traffic
+
+Mobile metadata still exists if using cellular uplink
+
+A buffer router between your phone and ISP is generally good practice.
+
+3. “Zero Click” & Local Attacks
+
+Zero-click attacks exploit:
+
+Baseband firmware
+
+Messaging parsers
+
+VoIP stacks
+
+Stingrays / IMSI catchers exploit:
+
+Downgrade attacks (2G)
+
+Weak authentication in legacy protocols
+
+Mitigation in GrapheneOS:
+
+Disable 2G
+
+Force LTE-only / 5G-only
+
+Avoid automatic downgrades
+
+The attack surface shrinks significantly when legacy protocols are removed.
+
+4. What Is (and Isn’t) a “VoIP” Number?
+
+Today, almost all telephony is IP-backed.
+
+Even traditional carriers use VoIP internally.
+
+So what does “VoIP number” mean?
+
+It usually means:
+
+A number allocated from providers classified as “non-wireless” or “virtual” in commercial carrier databases.
+
+Services check databases (e.g., carrier lookup APIs) and flag numbers as:
+
+Mobile (good)
+
+Fixed line
+
+VoIP (often rejected)
+
+High-risk / disposable
+
+Heuristics include:
+
+Carrier type
+
+Area code reputation
+
+Prior abuse signals
+
+Two numbers from the same provider may be treated differently.
+
+This is not technical — it’s policy.
+
+5. How eSIM Works
+
+An eSIM is provisioned over the internet.
+
+Flow:
+
+You scan QR code.
+
+Device contacts SM-DP+ server.
+
+EID identifies the chip.
+
+Profile containing IMSI is downloaded.
+
+Modem uses IMEI + IMSI to authenticate.
+
+Once provisioned, it behaves like a normal SIM.
+
+Important identifiers:
+
+IMEI → identifies modem
+
+IMSI → identifies subscriber
+
+ICCID → identifies SIM
+
+EID → identifies eSIM chip
+
+MSISDN → phone number
+
+The network primarily tracks IMSI, not IP.
+
+6. A New Carrier Doesn’t Solve Much
+
+Switching carriers:
+
+Does not remove radio-layer tracking.
+
+Does not prevent lawful intercept.
+
+Does not stop metadata logging.
+
+It only changes who logs you.
+
+7. KYC Reality
+
+Many countries require ID for SIM activation.
+
+If KYC is mandatory:
+
+Avoid highly centralized IDs where possible.
+
+Don’t use your most globally traceable document unless required.
+
+Understand local SIM registration laws before travel.
+
+Some countries offer prepaid anonymity. Others don’t.
+
+8. Defeating PSTN (Or Trying To)
+
+PSTN calls and SMS are plaintext at various interconnect points.
+
+Even when signaling is secured, SMS:
+
+Is store-and-forward
+
+Often unencrypted end-to-end
+
+Accessible to operators
+
+Some countries are shutting down copper PSTN, but that does not mean SMS becomes encrypted.
+
+It just becomes IP-transported plaintext.
+
+9. SIM Swap Defense
+
+To reduce SIM swap risk:
+
+Enable carrier-level 2FA / PIN
+
+Remove SMS as account recovery where possible
+
+Use app-based TOTP or hardware keys
+
+Your phone number should not be your root identity.
+
+10. SIM Operational Security
+
+Segmentation model:
+
+Banking SIM
+
+Government ID SIM
+
+Public / Misc SIM
+
+Do not mix roles.
+
+Compartmentalization > rotation.
+
+11. IMEI: Should You Change It?
+
+IMEI structure:
+
+8 digits TAC (device model)
+
+6-digit serial
+
+1 Luhn checksum
+
+Changing IMEI:
+
+Breaks historical linkage
+
+Removes prior SIM association
+
+Resets device fingerprint at carrier layer
+
+But risks:
+
+Carrier anomaly detection
+
+IMEI mismatch patterns
+
+Duplicate TAC/serial conflicts
+
+The real tracking anchor is IMSI.
+
+If you rotate IMEI but keep IMSI constant, nothing meaningful changes.
+
+If rotating, do it aligned with:
+
+New IMSI
+
+New EID
+
+New profile
+
+Frequent random changes can make you more suspicious, not less.
+
+Blend into a large device population.
+
+12. IP Address: Mobile vs WiFi
+
+Mobile:
+
+IP changes frequently
+
+Location triangulation possible
+
+Identity = IMSI
+
+WiFi (home):
+
+IP changes less frequently
+
+ISP knows your address
+
+Stable subscriber identity
+
+Public WiFi:
+
+Harder physical pinpointing
+
+But logs MAC + time + possibly onboarding data
+
+If you give real identity to public WiFi onboarding:
+Static IP + KYC = strong attribution.
+
+Mobile identifies the SIM.
+WiFi identifies the subscriber.
+
+Choose your threat model.
+
+13. Virtual Numbers vs Physical SIM
+
+Virtual number advantages:
+
+Not tied to IMEI
+
+No exposure to local IMSI catchers
+
+Often no KYC (jurisdiction dependent)
+
+Disadvantages:
+
+Often flagged as VoIP
+
+SMS still plaintext
+
+Limited country availability
+
+In some regions, virtual numbers are restricted.
+
+Sometimes you must bridge:
+
+Bank OTP
+
+Government messages
+
+This is where services like US/UK virtual number providers come in.
+
+But availability is geography-dependent.
+
+14. Voice: VoNR, VoWiFi
+
+Modern voice paths:
+
+VoLTE
+
+VoNR (5G standalone)
+
+VoWiFi
+
+All are IP-based.
+
+But signaling metadata still exists.
+
+Voice encryption at radio layer ≠ end-to-end encryption.
+
+15. SMS vs RCS vs Encrypted Messaging
+
+SMS:
+
+Plaintext
+
+Carrier-readable
+
+RCS:
+
+Often encrypted only within vendor ecosystems
+
+Not universal
+
+True E2EE:
+
+Signal
+
+WhatsApp
+
+Similar modern messengers
+
+Banks and governments still rely heavily on SMS.
+
+This is a systemic weakness.
+
+16. Local Attacks & Downgrades
+
+Defenses:
+
+Disable 2G
+
+Avoid auto network switching
+
+Keep baseband updated
+
+Prefer devices with hardened OS (e.g., GrapheneOS)
+
+Android 16 + improved radio HAL may reduce downgrade vectors.
+
+17. Online Identity Strategy
+
+Many services treat US numbers more favorably.
+
+Jurisdiction affects:
+
+Number acceptance
+
+Fraud scoring
+
+Access to services
+
+Your MSISDN is reputation-scored.
+
+Not all countries are equal in platform trust heuristics.
+
+18. The Real Takeaway
+
+There is no magic SIM.
+There is no magic carrier.
+There is no magic IMEI trick.
+
+There are only tradeoffs between:
+
+Metadata exposure
+
+Legal identity
+
+Radio-layer tracking
+
+Platform trust scoring
+
+Usability
+
+Privacy is achieved through:
+
+Compartmentalization
+
+Minimization
+
+Jurisdictional awareness
+
+Reducing single points of identity
+
+Avoiding SMS as root authentication
+
+Everything else is optimization.
+
+Phone Numbers and the Internet: Privacy, Security, and Operational Considerations in 2026Whitepaper
+Author: Compiled from Security Brahh analysis and verified sources
+Date: February 22, 2026
+Version: 1.0  AbstractPhone numbers remain a critical bridge between physical identity and digital services, yet they expose users to surveillance, SIM-swapping, location tracking, and VoIP heuristics. This whitepaper consolidates technical realities of cellular networks, eSIM provisioning, PSTN migration, IMEI management, and IP-based alternatives. It provides actionable opsec recommendations for privacy-conscious users on GrapheneOS, custom routers (e.g., GL.iNet MudiV2), and no-SIM setups. Key findings: traditional SIMs are obsolete for high-threat models; all-IP networks (VoIP/5G) improve encryption potential but centralize new risks; disciplined rotation and compartmentalization remain the strongest mitigations.1. No-SIM Connectivity: The Gold Standard for Local Threat ModelsEliminating the SIM entirely removes the primary vector for carrier-level tracking (IMEI + IMSI linkage, tower triangulation, GNSS pings).Core Setup (The Hated One model, 2024–2026):GrapheneOS device in permanent airplane mode (or no SIM/eSIM inserted).
+All traffic over trusted public Wi-Fi + full-device VPN (Mullvad/Proton) or Tor.
+Communication: Signal / Matrix / Session (E2EE).
+Rare voice/SMS needs: Offline “dumbphone” (e.g., Nokia feature phone) powered only when required, stored in Faraday bag.
+Data: Pre-download offline maps/content; public Wi-Fi ubiquitous in urban areas.
+
+Privacy GainsNo IMSI/IMEI exposure to carriers.
+Location reduced to Wi-Fi AP spherical radius (vs. meter-level cellular + GNSS).
+Zero persistent carrier metadata.
+
+Limitations: Inconvenient for always-on mobile data or banking/government OTPs.2. eSIM Provisioning Mechanics and VulnerabilitiesHow eSIM Works
+
+sequenceDiagram
+    participant User
+    participant Device_LPA
+    participant SM_DP_Plus
+    participant eUICC
+    User->>Device_LPA: Scan QR (SM-DP+ address + token)
+    Device_LPA->>SM_DP_Plus: EID + authentication request (TLS)
+    SM_DP_Plus->>Device_LPA: Encrypted profile (IMSI, Ki, 5G keys)
+    Device_LPA->>eUICC: Install profile (ISD-P)
+    eUICC-->>Device_LPA: Confirmation
+
+LPA (Local Profile Assistant) runs with high privileges.
+SM-DP+ (remote server) generates profile.
+EID (Embedded Identity) uniquely identifies the eUICC chip.
+Once installed, behaves like physical SIM (IMEI + IMSI pair).
+
+Major Vulnerabilities (2025–2026)eSIM Swap — Social engineering carrier support with breached PII.
+QR Code Theft — Interception via email compromise.
+Privileged Malware — Zero-click (Pegasus-class) control of LPA → silent profile injection.
+Untrusted SM-DP+ — Travel eSIM resellers often route through Chinese/Hong Kong infrastructure (Northeastern University study, 2025): IMSI exposure + ~800 m location accuracy in some cases.
+OpenRSP (Blockchain-Powered eSIM) proposal: decentralizes SM-DP+ via smart contracts + ZKPs for trustless, user-controlled provisioning (still WIP, GPL-3.0).
+
+Hardware AdaptersJMP.chat eSIM adapter (ST33G1M2 chip in SIM form factor) — loads any profile via JMP SIM Manager app.
+9eSIM V3 card + reader — stores up to 50 profiles (1.5 MB), lpac support on Android/PC/iOS.
+
+Mitigation: Rotate entire profile + EID + IMEI together; use only reputable providers (Silent.Link, JMP Data); always VPN; prefer data-only plans.3. PSTN Switch-Off and the All-IP Reality (2026 Status)Copper PSTN is being globally replaced by fiber + VoIP. Voice/SMS now travel over TLS-encrypted IP in most new deployments.Global Timeline (selected):Region
+Status
+Full Switch-Off
+UK (BT)
+Delayed
+Jan 2027
+Netherlands
+Completed
+—
+Germany
+Completed (phased)
+—
+Estonia
+Completed
+—
+Japan
+Ongoing
+2026–2027
+Singapore
+Completed
+—
+
+ImplicationsPlaintext PSTN era ending → SMS/voice now at least transport-encrypted.
+RCS E2EE (Apple iOS 26.4 beta, Feb 2026) emerging but limited (mostly iOS-to-iOS; Google extension server-dependent).
+WhatsApp/Messenger E2EE increasingly used by banks/governments as PSTN replacement.
+
+Recommendation: Treat any number that touches legacy PSTN as plaintext; prefer pure VoIP/XMPP bridges.4. VoIP vs “Real” Carrier Numbers and Detection HeuristicsServices (banks, Google, Meta, PayPal, etc.) block “bad” VoIP via:NPA-NXX block lookup.
+NPAC database queries.
+Carrier reputation + location heuristics.
+IP geolocation cross-check.
+
+Cloaked.app Model — Real numbers via routing/forwarding (4-number chain: recipient → Cloaked # → personal # → routing #). Still flagged as VoIP by many sites.Best Persistent Options (2026)JMP.chat — US/CA/UK numbers, XMPP/Cheogram integration, eSIM adapter, Monero-friendly, low rejection rate once aged.
+Silent.Link — Data-only anonymous eSIMs, crypto payments, no expiration.
+Port physical SIM → VoIP (Google Voice, JMP) to inherit “good carrier” reputation.
+
+Database Resourcesesimdb.com — Mobile data plan catalog.
+freecarrierlookup.com — Carrier type checks.
+
+5. IMEI Management and Rotation OpsecIMEI (15 digits): TAC (8) + serial + Luhn check digit.
+Changing IMEI erases carrier history tied to modem but must match device TAC for low collision probability (<0.001 until ~99k units of same model).Recommended Workflow (MudiV2 + Blue Merle)
+
+flowchart TD
+    A[Acquire new eSIM profile/EID] --> B[Change IMEI via Blue Merle LuCI before activation]
+    B --> C[Activate profile on router/phone]
+    C --> D[Use for session]
+    D --> E[Dispose profile + EID]
+    E --> F[Change IMEI again]
+    F --> G[New adapter/profile cycle]
+
+Legal in most jurisdictions for personal privacy use (no fraud intent).
+GrapheneOS recommendation: avoid unless aligned with other metadata.
+Tools: Blue Merle firmware on GL.iNet (enables AT commands on supported modems), OpenEUICC, lpac.
+
+Collision Probability — Negligible for popular models (<1/100,000 per TAC).6. Mobile IP vs Wi-Fi: Location Privacy ComparisonFactor
+Mobile Data
+Public Wi-Fi
+Home Wi-Fi
+Location Accuracy
+Tower triangulation + GNSS (meters)
+AP spherical radius (hundreds of m)
+Exact address
+Tracking Vector
+IMEI/IMSI (persistent)
+MAC (randomized) + dynamic IP
+Static IP + ISP logs
+Visibility to Sites
+ISP public IP
+ISP public IP
+ISP public IP
+Best For
+When proxying
+Daily opsec
+Avoid
+
+Rule: Public Wi-Fi + VPN > mobile data for location privacy when not using paid residential proxies.7. KYC, Compartmentalization, and Country-Specific Reality185/245 countries require SIM registration (passport/biometrics in 13).
+Exceptions (no KYC): USA, Canada, Mexico, Chile, etc.SIM Opsec TiersBanking/government — Dedicated physical/eSIM with minimal KYC ID.
+High-privacy daily — Data-only anonymous eSIM (Silent.Link) + JMP US number bridge.
+Throwaways — smspool.net / temporary VoIP.
+
+Emergency Calls — Still require valid SIM profile in most jurisdictions.8. Router-Centric Stack (Recommended Endgame)GL.iNet MudiV2 (GL-E750v2) + Blue MerleKernel 5.10.176+.
+eSIM support via lpac.
+IMEI change via LuCI → Network → Blue Merle.
+WireGuard + VPN Hotspot.
+Starlink as upstream buffer (GPS-disablable, ~24 km location blur).
+
+Full Chain
+Starlink → MudiV2 (Blue Merle) → WireGuard → Devices (GrapheneOS, no SIM).9. DiagramseSIM Provisioning Flow (see Section 2)IMEI Rotation Workflow (see Section 5)Connectivity Privacy Hierarchy
+
+graph TD
+    A[No SIM + Public Wi-Fi + VPN] --> B[Data-only eSIM + JMP VoIP bridge]
+    B --> C[Physical SIM compartmentalized]
+    C --> D[Legacy PSTN number]
+
+Conclusion and Actionable ChecklistDefault to no SIM wherever possible.
+For persistent numbers: JMP.chat (US identity) + eSIM adapter.
+Rotate EID + profile + IMEI together on supported hardware.
+Use data-only anonymous eSIMs (Silent.Link preferred) behind VPN.
+Migrate off PSTN-dependent services; push for WhatsApp-style E2EE in banking/government.
+Compartmentalize: separate SIMs for banking / gov / daily.
+Monitor OpenRSP and decentralized eSIM projects for long-term sovereignty.
+
+Phone numbers are legacy identity anchors in an IP world. Treat them as disposable bridges, never as persistent personal identifiers.References (key sources consulted)The Hated One – “Why I don’t use a SIM card” (YouTube, 2024)
+Cloaked.app help articles (routing mechanics & VoIP rejection)
+PrivacyGuides threads on JMP, Silent.Link, travel eSIMs, mobile options
+Northeastern University eSIM routing study (USENIX Security 2025)
+BT Group / global PSTN switch-off reports
+PhoneTravelWiz SIM registration database
+OpenRSP GitHub repository
+an.dywa.ng carrier GNSS analysis
+Letters.EmpireSec JMP & Starlink deep-dives
+Wikipedia (PSTN, IMEI) and GSMA references
+
+This document is licensed under CC-BY-SA 4.0. Distribute and improve freely. Feedback welcome.
+
+
 
 ## no SIM
 

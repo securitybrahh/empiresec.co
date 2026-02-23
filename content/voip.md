@@ -110,4 +110,6 @@ There are several methods for GrapheneOS users to contribute their banking app r
 
 Please avoid opening a new issue to update the status of a vendor report.  
   
-Instead, use `CTRL` + `F` on this page or search on the [issue tracker](https://github.com/securitybrahh/voip-providers/issues) for the app and open its `Report`. Then, simply add your update as a comment to the existing report.  
+Instead, use `CTRL` + `F` on this page or search on the [issue tracker](https://github.com/securitybrahh/voip-providers/issues) for the app and open its `Report`. Then, simply add your update as a comment to the existing report.
+
+<script src="https://giscus.app/client.js" data-repo="securitybrahh/empiresec.co" data-repo-id="R_kgDOOL5WwA" data-category="General" data-category-id="DIC_kwDOOL5WwM4CpBdp" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="catppuccin_mocha" data-lang="en" data-loading="lazy" crossorigin="anonymous" async> </script>

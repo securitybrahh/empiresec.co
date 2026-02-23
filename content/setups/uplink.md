@@ -1172,6 +1172,8 @@ global sim identifier:
 
 ## Voice
 
+if you use 4G-only, 4G/5G-only or 5G-only then you're using VoLTE/VoNR which is an encrypted IPsec tunnel to a carrier server over TCP/IP (mobile data)
+
 voNR (SA and NSA) > voWifi? 
 
 https://en.wikipedia.org/wiki/List_of_5G_NR_networks
@@ -1186,6 +1188,7 @@ https://en.wikipedia.org/wiki/Voice_over_NR
 
 ## SMS
 
+IMS/SIP via IpSec?? 
 https://support.apple.com/en-us/104972
 
 e2ee-rcs is an unspecified extension by Google, works only on google's servers, imessage gateway to rcs, apple gets plaintext maybe

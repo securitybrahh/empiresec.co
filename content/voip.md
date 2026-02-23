@@ -14,7 +14,7 @@ draft: false
   
 **Maintained List of VoIP Providers per Country Code**    
    
-This list includes vendors that have been tested, submitted, reviewed, and verified.  
+This list includes vendors that have been tested, submitted, reviewed, and verified ny the community  
     
 **[LIST](#vendors) | [SUBMIT](#submit-a-new-vendor-report) | [UPDATE](#update-status-of-vendor-report)**  
 
@@ -22,20 +22,13 @@ This list includes vendors that have been tested, submitted, reviewed, and verif
 
 Welcome to the crowd-sourced dataset of VoIP Vendors
   
-New visitors are encouraged to read the [official usage guide on banking apps](https://grapheneos.org/usage#banking-apps) for comprehensive details about how these apps function on GrapheneOS.  
-
-### IMPORTANT 
-
-Please read GrapheneOS's important announcement, officially released on Dec 1, 2023:  
-[X](https://x.com/GrapheneOS/status/1730491676760633426) | [Mastodon](https://grapheneos.social/@GrapheneOS/111504057316755618) | [Bluesky](https://bsky.app/profile/grapheneos.org/post/3kfhrujfcih2m)   
-   
-Also available as a [pinned issue](https://github.com/PrivSec-dev/banking-apps-compat-report/issues/342), detailing the latest developments about [SafetyNet's replacement by Play Integrity API](https://developer.android.com/privacy-and-security/safetynet/deprecation-timeline), which could impact _some_ banking apps' [compatibility](https://discuss.grapheneos.org/d/8330-app-compatibility-with-grapheneos#:~:text=issuecomment%2D1766887298%29-,Not%20compatible,-Due%20to%20the) with GrapheneOS after the app updates.  
+New visitors are encouraged to read the [official usage guide on carrier guide](https://www.empiresec.co/carrier)
 
 ---
 
 <!-- 
 TODO: 
-- remove language and geo-language from app store url link after testing locally
+- remove language and geo-language from vendor url link after testing locally
 - i.e., users in different countries / languages locale defaults 
 
 EXAMPLE:
@@ -63,6 +56,34 @@ TEST: Test url again after removing the parameters and verify there is no mistak
 -->
                             
 ## Vendors
+
+- Callcentric
+
+### North America
+
+### Latin America
+
+### Central America
+
+### Africa
+
+### Middle East
+
+### Europe
+
+### India
+
+### South East Asia
+
+### China
+
+### Russia
+
+### Oceania
+
+#### Australia
+
+#### New Zealand
                             
 ### Australia
 
@@ -77,32 +98,16 @@ TEST: Test url again after removing the parameters and verify there is no mistak
 
 This section covers how to submit or update a banking app report.
 
-### Submit a new app report 
+### Submit a new vendor report 
 
 There are several methods for GrapheneOS users to contribute their banking app report:  
 
 | Method | Description | Action |
 | :--- | :--- | :---: |
-| **GitHub** | Fill out the form on the [issue tracker](https://github.com/PrivSec-dev/banking-apps-compat-report/issues) using your GitHub account | [`SUBMIT REPORT`](https://github.com/PrivSec-dev/banking-apps-compat-report/issues/new?assignees=&labels=&template=app_report.yml) |
-| **Non-GitHub** | View gist → Raw → Save template markdown file to fill out. | [`Gist`](https://gist.github.com/akc3n/e845078ddbbb28ada0dd055c51ec45af) |
-| Curl | Terminal → `curl -O` → paste copied url (gist form `.md` template) ⟶ | [`Copy link address`](https://gist.githubusercontent.com/akc3n/e845078ddbbb28ada0dd055c51ec45af/raw/c2bb563db726b80491a59c68d7f15c0897f563a0/banking-app-report-issue-form.md) |  
+| **GitHub** | Fill out the form on the [issue tracker](https://github.com/securitybrahh/voip-providers/issues) using your GitHub account | [`SUBMIT REPORT`](https://github.com/securitybrahh/voip-providers/issues/new?assignees=&labels=&template=vendor_report.yml) |
+
+### Update status of vendor report
+
+Please avoid opening a new issue to update the status of a vendor report.  
   
-Alternatively, curl and pipe the output directly into your preferred text editor for editing, for example:  
-  
-```bash
-curl https://gist.githubusercontent.com/akc3n/e845078ddbbb28ada0dd055c51ec45af/raw/c2bb563db726b80491a59c68d7f15c0897f563a0/banking-app-report-issue-form.md\?T | nvim -
-```
-
-### Update status of app report
-
-Please avoid opening a new issue to update the status of a banking app report.  
-  
-Instead, use `CTRL` + `F` on this page or search on the [issue tracker](https://github.com/PrivSec-dev/banking-apps-compat-report/issues) for the app and open its `Report`. Then, simply add your update as a comment to the existing report.  
-  
-For non-GitHub users, if you have tried all the combinations from these [possible workaround solutions](https://discuss.grapheneos.org/d/8330-app-compatibility-with-grapheneos) and still cannot resolve your specific banking app compatibility issue, feel free to [contact me](https://github.com/akc3n/akc3n?tab=readme-ov-file#connect) for further assistance.  
-
----
-
-## Note
-
-GrapheneOS has a [detailed guide](https://grapheneos.org/articles/attestation-compatibility-guide) for app developers on how to support GrapheneOS with the hardware attestation API. Direct use of the hardware attestation API provides much higher assurance than using SafetyNet so these apps have nothing to lose by using a more meaningful API and supporting a more secure OS.  
+Instead, use `CTRL` + `F` on this page or search on the [issue tracker](https://github.com/securitybrahh/voip-providers/issues) for the app and open its `Report`. Then, simply add your update as a comment to the existing report.  

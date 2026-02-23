@@ -887,6 +887,8 @@ https://help.cloaked.app/hc/en-us/articles/20683558341780-Why-do-some-sites-reje
 
 https://help.cloaked.app/hc/en-us/articles/20373440034708-Why-can-t-I-verify-my-phone-numbers-on-some-websites
 
+https://wiki.soprani.ca/FAQ/Why%20isn%27t%20my%20number%20being%20accepted%20by%20an%20online%20service%3F
+
 ## how does an esim Functions?
 
 https://discuss.privacyguides.net/t/what-is-a-jmp-chat-esim-adapter/19165/14

@@ -979,6 +979,20 @@ have 2fa with your operator
 
 ## SIM Lock
 
+## 2FA 
+
+Banks still use sms as verification mechanism, inbound sms can't still be used to hack accounts if 1FA is not known - so use strong passwords and have email opsec
+
+## Email and password OPSEC
+
+1. banking email - firstnamelastname protonmail
+2. non-banking email - random passphrase
+3. audience email - forward email
+4. backend email 1 - critical accounts (TUta)
+5. backend email 2 - non critical accounts (Proton)
+
+https://letters.empiresec.co/p/pass
+
 ## IMEI
 
 Should you change your IMEI on your devices?

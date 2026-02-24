@@ -941,6 +941,10 @@ so jmp.chat is nice
 
 ## Local Attacks
 
+## Data Only SIM
+
+ss7 can still be used for fraud - make illegitimate calls/sms,disable usage limits, rack up the bill.
+
 ## Location
 
 phone# -> Anytime Integration interrogation (ATI) -> Location
@@ -956,6 +960,10 @@ for eg, don't use a passport
 in India, don't use Aadhar
 
 https://www.phonetravelwiz.com/phone-travel-options/sim-card-registration/
+
+## Airplane Mode
+
+switch off all radios
 
 ## defeat the PSTN 
 

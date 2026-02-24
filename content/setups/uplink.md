@@ -1239,6 +1239,16 @@ https://zetier.com/5g-imsi-catcher/
 
 https://www.eff.org/pages/cell-site-simulatorsimsi-catchers
 
+## Video
+
+https://booth.video/about
+
+https://support.google.com/meet/answer/12387251?hl=en
+
+https://element.io/blog/secure-video-conferencing-for-matrix/
+
+https://support.apple.com/en-in/guide/security/seca331c55cd/web
+
 ## eSIM "server"
 
 https://discuss.privacyguides.net/t/privacy-differences-between-esim-vs-physical-sim/32629/4

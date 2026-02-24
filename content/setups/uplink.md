@@ -943,6 +943,10 @@ so jmp.chat is nice
 
 ## Location
 
+phone# -> Anytime Integration interrogation (ATI) -> Location
+
+phone# -> SRI -> IMSI -> PSI -> Location
+
 ## KYC
 
 if you have to buy a sim with kyc, buy it with an ID that makes it difficult to centralize tracking

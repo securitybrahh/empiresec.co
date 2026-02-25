@@ -19,7 +19,11 @@ Using no phone number is actually the best strategy but banks and other institut
 
 If a voice call or an SMS is routed through PSTN (which is just copper i.e. plain text), anyone that knows what your number is, can spy on you. 
 
-{insert figure of e.164 identifier}
+{{< figure
+  src="images/setups/number_identity.jpg"
+  alt="phone number identifier"
+  class="ma0 w-75"
+>}}
 
 Though if you live in a country where PSTN has been shut down, good for you! eg. Germany, Netherlands.
 
@@ -39,9 +43,13 @@ so the final question is how to get intenet in a mobile fashion.
 
 The best is to use Cafe Wifi's, different public wifi's with a VPN - I recommend Obscurra, they decouple your IP from your traffic so they themselves don't know what you browse, you can pay with lightning as well.
 
-starlink is also nice with a router, here's an article.
+starlink is also nice with a router, here's an article https://letters.empiresec.co/p/starlink
 
-here are some global data only sim options -
+here are some global data only sim options - https://www.phonetravelwiz.com/phone-travel-options/sim-card-registration/
+
+<script src="https://giscus.app/client.js" data-repo="securitybrahh/empiresec.co" data-repo-id="R_kgDOOL5WwA" data-category="General" data-category-id="DIC_kwDOOL5WwM4CpBdp" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="catppuccin_mocha" data-lang="en" data-loading="lazy" crossorigin="anonymous" async> </script>
+
+
 
 I am creating a crowd sourced Database of VoIP Providers per country code, please contribute - https://www.empiresec.co/voip/
 

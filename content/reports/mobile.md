@@ -43,5 +43,5 @@ starlink is also nice with a router, here's an article.
 
 here are some global data only sim options -
 
-I am creating a crowd sourced Database of VoIP Providers per country code, please contribute - https://www.empiresec.co/mobile/
+I am creating a crowd sourced Database of VoIP Providers per country code, please contribute - https://www.empiresec.co/voip/
 

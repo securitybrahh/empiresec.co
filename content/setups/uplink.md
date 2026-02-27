@@ -1247,6 +1247,8 @@ https://www.eff.org/pages/cell-site-simulatorsimsi-catchers
 
 https://booth.video/about
 
+https://jitsi.org/e2ee-in-jitsi/
+
 https://support.google.com/meet/answer/12387251?hl=en
 
 https://element.io/blog/secure-video-conferencing-for-matrix/

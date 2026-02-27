@@ -1128,6 +1128,10 @@ Network & Internet > SIMs > Select SIM:
 
 # gl-inet mudiV2 (gl-e750v2)
 
+GOS has 400k devices, given by a ping to their servers.
+
+but the anonset depends upon per country per operator/carrier
+
 https://dl.gl-inet.com/router/e750/beta
 
 5.10.176 kernel https://lwn.net/Articles/926874/

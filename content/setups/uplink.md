@@ -859,7 +859,9 @@ Wikipedia (PSTN, IMEI) and GSMA references
 
 This document is licensed under CC-BY-SA 4.0. Distribute and improve freely. Feedback welcome.
 
+## IMSI
 
+https://www.cape.co/blog/product-feature-identifier-rotation
 
 ## no SIM
 
@@ -930,6 +932,9 @@ https://discuss.privacyguides.net/t/data-only-esim-provider-local-ip-breakout/34
 https://discuss.privacyguides.net/t/issue-with-no-kyc-esim-provider/34792/3
 
 https://discuss.privacyguides.net/t/experience-with-silent-link/19242/14
+
+https://www.cape.co/blog/inside-capes-mobile-core
+
 
 ## Emergency Calls
 

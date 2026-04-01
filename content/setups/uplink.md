@@ -956,6 +956,8 @@ phone# -> Anytime Integration interrogation (ATI) -> Location
 
 phone# -> SRI -> IMSI -> PSI -> Location
 
+https://support.apple.com/en-us/126101
+
 ## KYC
 
 if you have to buy a sim with kyc, buy it with an ID that makes it difficult to centralize tracking

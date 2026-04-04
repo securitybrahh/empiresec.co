@@ -1,6 +1,6 @@
 ---
 title: "Why forwardemail is one of a kind"
-date: 2026-04-003T00:00:52Z
+date: 2026-04-03T00:00:52Z
 # weight: 1
 aliases: ["/forwardemail"]
 tags: ["email", "smtp", "encryption", "identity", "domain"]
@@ -35,8 +35,10 @@ the code that enforces this:
 5. Password hashed with Argon2 before storage (only hash + salt stored, never plaintext):
    https://github.com/forwardemail/forwardemail.net/blob/d087cd6816be680d38f74c63fe1f5630a8c4741b/helpers/create-password.js#L71
 
-Regarding your account settings (domains, aliases, routing rules): these are stored in our MongoDB database and are accessible to us through the dashboard at https://forwardemail.net/my-account so we can help troubleshoot delivery issues. However, the actual mailbox contents (your emails, contacts, calendars) live exclusively in the encrypted SQLite databases — we cannot access them without your password.
+Regarding the account settings (domains, aliases, routing rules): these are stored in the MongoDB database and are accessible to the staff through the dashboard at https://forwardemail.net/my-account so they can help troubleshoot delivery issues. However, the actual mailbox contents (the emails, contacts, calendars) live exclusively in the encrypted SQLite databases — we cannot access them without the SMTP password.
 
 For server-level hardening, they use Ansible to provision all infrastructure:
 - Security playbook (1,484 lines): https://github.com/forwardemail/forwardemail.net/blob/d087cd6816be680d38f74c63fe1f5630a8c4741b/ansible/playbooks/security.yml
 - Ansible documentation: https://github.com/forwardemail/forwardemail.net/blob/d087cd6816be680d38f74c63fe1f5630a8c4741b/ansible/README.md
+
+caldav/carddav/etc is all in same sqlite file (encrypted with the imap/smtp password, the staff don't have access)

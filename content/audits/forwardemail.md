@@ -5,7 +5,7 @@ date: 2026-04-03T00:00:52Z
 aliases: ["/forwardemail"]
 tags: ["email", "smtp", "encryption", "identity", "domain"]
 author: "Security Brahh"
-description: "Threat modeling phone numbers, SIMs, IMEI, and internet connectivity"
+description: "Email can be salvaged!!"
 draft: false
 ---
 

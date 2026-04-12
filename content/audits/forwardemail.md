@@ -76,3 +76,87 @@ Relevant FAQ entry:
 — FAQ: "Can people unregister or register my email forwarding without my permission" (https://forwardemail.net/en/faq)
 
 Bottom line: The MX records are a shared signal across 1.6M+ domains — knowing someone uses Forward Email tells you very little. If you want to eliminate even the TXT record exposure, use the encrypted TXT record tool (https://forwardemail.net/en/encrypt) (free) or upgrade to a paid plan where aliases are configured entirely via the dashboard.
+
+## Metadata
+
+The service don't store email metadata to disk — no sender addresses, recipient addresses, subjects, timestamps, or IPs are persisted. Email processing happens entirely in-memory. Once the message is delivered, that data is gone.  Only headers remain for 7 days typically on most error logs (only for 4xx and 5xx errors), and outbound SMTP message retention time can be configured for retention as well in Settings page (headers only, not body).
+
+For IMAP mailboxes on paid plans, the emails (including headers/metadata) are stored in individually encrypted SQLite databases using ChaCha20-Poly1305. The encryption key is derived from the SMTP password — the staff don't have it and can't access your mailbox contents.
+
+The service don't collect phone numbers, device IDs, or login history. No recovery emails. No tracking pixels. No read receipts.
+
+1. No email content stored to disk during forwarding  
+  
+The entire MX inbound pipeline lives in helpers/on-data-mx.js. Email data stays in Node.js Buffer objects in memory --- there's **_no_** fs.writeFile or createWriteStream anywhere in the forwarding path:  
+  
+[https://github.com/forwardemail/forwardemail.net/blob/master/helpers/on-data-mx.js\#L474](https://github.com/forwardemail/forwardemail.net/blob/master/helpers/on-data-mx.js#L474)  
+[https://github.com/forwardemail/forwardemail.net/blob/master/helpers/on-data-mx.js\#L1987-L2004](https://github.com/forwardemail/forwardemail.net/blob/master/helpers/on-data-mx.js#L1987-L2004)  
+  
+Forwarding builds the message as Buffer.concat(\[headers.build(), body\]) and sends it directly over SMTP. IMAP delivery sends the raw buffer over WebSocket to the SQLite server --- never touches disk on the MX server:  
+  
+[https://github.com/forwardemail/forwardemail.net/blob/master/helpers/on-data-mx.js\#L482-L499](https://github.com/forwardemail/forwardemail.net/blob/master/helpers/on-data-mx.js#L482-L499)  
+  
+2. Encrypted SQLite mailboxes (ChaCha20-Poly1305)  
+  
+Each mailbox is an individually encrypted SQLite database using better-sqlite3-multiple-ciphers (SQLCipher-compatible). The default cipher is chacha20 and the encryption key is the SMTP password --- The service decrypt it only at open time, never store it:  
+  
+[https://github.com/forwardemail/forwardemail.net/blob/master/helpers/setup-pragma.js\#L30-L41](https://github.com/forwardemail/forwardemail.net/blob/master/helpers/setup-pragma.js#L30-L41)  
+  
+Line 30: cipher defaults to 'chacha20'  
+Line 36: db.pragma(\`cipher='${cipher}'\`)  
+Line 38: db.key(Buffer.from(decrypt(session.user.password)))  
+  
+The database module itself:  
+[https://github.com/forwardemail/forwardemail.net/blob/master/helpers/get-database.js\#L10](https://github.com/forwardemail/forwardemail.net/blob/master/helpers/get-database.js#L10)  
+  
+3. Zero-knowledge --- encryption key derived from SMTP password  
+  
+During auth, the password is encrypted in-memory and attached to the session. It's never stored in Redis or on disk:  
+  
+[https://github.com/forwardemail/forwardemail.net/blob/master/helpers/on-auth.js\#L984](https://github.com/forwardemail/forwardemail.net/blob/master/helpers/on-auth.js#L984)  
+[https://github.com/forwardemail/forwardemail.net/blob/master/helpers/on-auth.js\#L1020-L1022](https://github.com/forwardemail/forwardemail.net/blob/master/helpers/on-auth.js#L1020-L1022)  
+  
+Line 984: password: encrypt(auth.password) --- encrypted in session  
+Line 1022: const { password: \_pw, ...userWithoutPassword } = user --- stripped before Redis cache  
+  
+The encrypt/decrypt implementation supports multiple cipher versions (AES-256-GCM current, ChaCha20-Poly1305 legacy, XWing quantum-resistant future):  
+  
+[https://github.com/forwardemail/forwardemail.net/blob/master/helpers/encrypt-decrypt.js](https://github.com/forwardemail/forwardemail.net/blob/master/helpers/encrypt-decrypt.js)  
+  
+4. Error logs retain headers only, body is redacted  
+  
+Outbound SMTP message retention is configurable per-domain (0-30 days). After the retention period, the body is replaced with a redaction notice --- only headers remain:  
+  
+[https://github.com/forwardemail/forwardemail.net/blob/master/app/models/emails.js\#L1010-L1069](https://github.com/forwardemail/forwardemail.net/blob/master/app/models/emails.js#L1010-L1069)  
+  
+Line 1012-1020: retention\_days check  
+Line 1060-1069: Body replaced with "This message was successfully sent. It has been redacted and purged for your security and privacy."  
+  
+The retention\_days setting on the domain model:  
+[https://github.com/forwardemail/forwardemail.net/blob/master/app/models/domains.js\#L319-L322](https://github.com/forwardemail/forwardemail.net/blob/master/app/models/domains.js#L319-L322)  
+  
+5. Passwords scrubbed from error logs  
+  
+Before any log is saved, passwords are explicitly deleted from the payload:  
+  
+[https://github.com/forwardemail/forwardemail.net/blob/master/app/models/logs.js\#L459-L462](https://github.com/forwardemail/forwardemail.net/blob/master/app/models/logs.js#L459-L462)  
+  
+6. No third-party analytics or telemetry  
+  
+Analytics is 100% first-party and self-hosted. IP addresses are used only for a daily-rotating session hash --- never stored. Events go to service's MongoDB, not to any external service:  
+  
+[https://github.com/forwardemail/forwardemail.net/blob/master/helpers/analytics.js\#L359-L365](https://github.com/forwardemail/forwardemail.net/blob/master/helpers/analytics.js#L359-L365)  
+[https://github.com/forwardemail/forwardemail.net/blob/master/helpers/analytics.js\#L410-L412](https://github.com/forwardemail/forwardemail.net/blob/master/helpers/analytics.js#L410-L412)  
+[https://github.com/forwardemail/forwardemail.net/blob/master/helpers/analytics.js\#L498-L501](https://github.com/forwardemail/forwardemail.net/blob/master/helpers/analytics.js#L498-L501)  
+  
+Line 362: "This is NOT a persistent identifier - it rotates daily"  
+Line 412: "IP address (used for session hash only, NOT stored)"  
+  
+**_There's no Google Analytics, Mixpanel, Segment, or any third-party tracking SDK anywhere in the codebase. You can grep for it yourself.  
+_**
+
+7. No tracking pixels or read receipts  
+  
+**_The service doesn't inject tracking pixels or read receipt beacons into forwarded or delivered emails. There is zero code in the forwarding pipeline (on-data-mx.js) or IMAP delivery path that adds any tracking content to messages._**  
+  
+The entire codebase is open source --- you're welcome to audit any of it.

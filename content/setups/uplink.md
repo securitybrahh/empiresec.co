@@ -859,6 +859,29 @@ Wikipedia (PSTN, IMEI) and GSMA references
 
 This document is licensed under CC-BY-SA 4.0. Distribute and improve freely. Feedback welcome.
 
+## JMP
+
+From Bandwidth thier carrier: 
+
+```
+We don’t offer an SS7 firewall as a product.
+
+For voice security, the typical approach is to use a SIP-based firewall or a Session Border Controller (SBC) on your side, which acts as your voice firewall.
+
+For SIP and IMS, we don’t provide an SS7 firewall, but you can secure SIP traffic on your side with a SIP-based firewall or an SBC (Session Border Controller).
+
+A few key points:
+
+Your firewall should allow SIP signaling on UDP 5060, and media on UDP 1024 - 65534 (static or via ALG/B2BUA).
+
+Bandwidth uses multiple IPs for media, so your firewall needs to allow those IPs.
+
+You can add SIP Authentication (network bridge) for extra security on the SIP trunk.
+
+TLS/SRTP can encrypt calls between your network and Bandwidth (not PSTN calls).
+```
+
+
 ## IMSI
 
 https://www.cape.co/blog/product-feature-identifier-rotation

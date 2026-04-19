@@ -11,6 +11,10 @@ draft: false
 
 # Phone Number and Internet Connectivity
 
+https://nitter.net/GrapheneOS/status/1846709900715458703
+
+https://nitter.net/GrapheneOS/status/1903187370259759514
+
 Modern telephony is no longer copper-bound.  
 Everything is IP-backed, database-controlled, and identity-scored.
 

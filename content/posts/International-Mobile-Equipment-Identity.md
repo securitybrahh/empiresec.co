@@ -11,7 +11,7 @@ draft: false
 
 # International Mobile Equipment Identity
 
-You have to rotate IMSI with not so random IMEI, IMEI has to match device modem's radio signatures and has to be based on some algo.
+You have to rotate IMSI with not so random IMEI, IMEI has to match device modem/baseband's radio signatures and has to be based on some algo.
 
 IMEI collision is unlikely in a country / same carrier if the rotation is done right.
 

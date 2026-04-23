@@ -11,6 +11,14 @@ draft: false
 
 # International Mobile Equipment Identity
 
+You have to rotate IMSI with not so random IMEI, IMEI has to match device modem's radio signatures and has to be based on some algo.
+
+IMEI collision is unlikely in a country / same carrier if the rotation is done right.
+
+Even [silent.link](https://silent.link) IMSI's have [e.164](https://en.wikipedia.org/wiki/E.164) identifier.
+
+Cape's obscura has IMEI and IMSI rotation but does it have EID rotation?
+
 https://codeberg.org/luxferre/lexipwn/issues/3
 
 https://xdaforums.com/t/imei-change-and-legality-mods-please-read.4155591/

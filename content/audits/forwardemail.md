@@ -11,6 +11,8 @@ draft: false
 
 # Why forwardemail is one of a kind
 
+https://forwardemail.net/en/blog/docs/email-protocols-rfc-compliance-imap-smtp-pop3-comparison#dane-dns-based-authentication-of-named-entities
+
 here is exactly how it works in the 100% open-source codebase:
 
 The emails are encrypted with the SMTP password (the generated alias password). The SQLite database file is encrypted at rest using ChaCha20-Poly1305, and the encryption key is your password. The staff cannot access the mailbox contents.

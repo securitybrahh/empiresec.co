@@ -11,6 +11,81 @@ draft: false
 
 # XMPP and other privacy messengers
 
+**Simplex Chat servers** operate in a unique "mailbox relay" model that's very different from XMPP (including Snikket), Signal, or Briar. It is designed specifically to minimize metadata and eliminate user identifiers, making it one of the strongest options for privacy against server operators and network observers.
+
+### Core Architecture (How Servers Work)
+- **No user IDs or long-term identifiers at all** — Not even random numbers, public keys, or persistent addresses (unlike XMPP JIDs, Signal phone numbers, or even most P2P systems). Each connection uses **temporary, pairwise, unidirectional "simplex queues"** (one for sending, one for receiving, usually on different servers).
+- **Servers are dumb relays** — They store encrypted messages temporarily (in memory or briefly on disk) until delivery, then delete them. They see only anonymous queue addresses and encrypted blobs. No knowledge of who talks to whom, no contact lists, no groups metadata, no profiles.
+- **Per-chat server diversity** — A typical 1:1 chat often uses **4 different servers** (sender/receiver queues + redundancies). This fragments visibility.
+- **Decentralized & user-controlled** — You (and your contacts) choose servers. Apps have presets (e.g., from SimpleX team or Flux), but you can run your own SMP (messaging) and XFTP (file) servers and still talk to everyone. Fully federated in practice but without server-to-server federation.
+- **Private message routing (onion-like)** — Since v5.8+/6.0, clients use 2-hop routing via known servers to hide your IP from your contact's chosen server. Similar to mixnets, with per-packet mixing and extra E2EE layers.
+
+**Comparison to the others you discussed**:
+
+| Aspect                  | Simplex Servers                          | XMPP/Snikket (OMEMO)                  | Signal (Centralized)                  | Briar (No Servers)                     |
+|-------------------------|------------------------------------------|---------------------------------------|---------------------------------------|----------------------------------------|
+| **Metadata to servers** | Extremely low (no user graph, no contacts/groups visible) | High (server sees all JIDs, groups, presence, etc.) | High (central server sees social graph) | None (P2P)                            |
+| **Server trust**        | Low — servers are "dumb" relays you control/choose | Medium-high (even semi-trusted)      | Must fully trust Signal servers      | None                                  |
+| **IP hiding**           | Built-in private routing + optional Tor | None by default (needs Tor/ proxies) | None (needs Tor)                     | Tor + Bluetooth/WiFi                  |
+| **E2EE & Forward Secrecy** | Double Ratchet + **continuous post-quantum** (quantum-resistant ratchet) | OMEMO (X3DH + Double Ratchet, classical) | Signal Protocol (now with SPQR post-quantum upgrades) | Custom Bramble (classical, forward secrecy) |
+| **MITM resistance**     | Strong (out-of-band QR/link key exchange) | Depends on fingerprint verification (often weak by default) | Strong (but server could theoretically MITM if compromised) | Strong (in-person QR preferred)      |
+| **Spam/Abuse**          | Excellent (no ID = contact only via shared link) | Moderate (depends on server)         | Good                                 | Good (proximity or links)             |
+| **Reliability/Usability** | High (async delivery)                   | High                                 | Highest                              | Lower (opportunistic P2P)             |
+| **Server compromise impact** | Minimal (only undelivered msgs, no metadata) | Can leak a lot (metadata, reactions historically) | Full access to metadata              | N/A                                   |
+
+### Key Advantages for Your Threat Model
+- **Better metadata protection than XMPP/Snikket** — Servers know almost nothing about your social graph, unlike XMPP where the server sees groups, contacts, and can do things like advertise keys or (in theory) join chats. Simplex avoids the "server knows everything" issues you mentioned.
+- **Stronger than Signal on identifiers/metadata** — No central authority that could be compelled to link you to contacts. You pick servers per profile/connection.
+- **Quantum resistance ahead or on par** — Continuous PQ key exchange in the ratchet (not just initial handshake), protecting ongoing conversations better against future quantum threats.
+- **No server can easily MITM** if you verify via shared link/QR (standard for Simplex).
+- **Self-host friendly** — Run your own relays for maximum control (similar to self-hosted XMPP but with far less metadata leakage).
+
+### Limitations
+- Still relies on **servers** (unlike Briar), so if your threat model is total regime-level surveillance with no infrastructure trust, Briar’s fully P2P (Tor + Bluetooth/offline mesh) wins for blackouts/censorship. Simplex is better for reliable async messaging.
+- Delivery depends on chosen servers being online (but redundancy helps).
+- Smaller user base than Signal; more technical for advanced setups.
+- Groups use similar queue-based design (decentralized but client-side managed).
+
+**Bottom line**: For "Signal-level security with much better metadata protection and less server trust than XMPP," **Simplex is excellent** and often recommended in privacy communities for exactly the concerns in your original thread. Server choice is relevant (pick trusted/self-hosted ones, enable private routing/Tor for max privacy), but far less risky than in XMPP because servers are deliberately ignorant. It's a strong middle ground between server-based convenience and Briar’s extreme resilience.
+
+If your threat model is high (e.g., activist under regime), combine with Tor + careful server choices or use Briar for offline scenarios. For everyday use, it's more private than hardened XMPP/Snikket in many ways.
+
+**Briar is one of the strongest options for privacy and security in high-threat environments** (activists, journalists, or regimes with heavy surveillance/censorship like Iran), precisely because it eliminates servers entirely. Unlike XMPP/OMEMO (or even Snikket), Signal, or Simplex, there is **no central infrastructure** that can be subpoenaed, hacked, or forced to log metadata. All syncing happens directly peer-to-peer (P2P) over Tor (when online), Bluetooth, Wi-Fi, or even USB/memory cards. This directly addresses the server-trust concerns you raised with XMPP.
+
+### Privacy
+Briar’s design protects against the exact threats discussed in your thread:
+
+- **Metadata is almost nonexistent to outsiders** — No server knows your contacts, groups, forums, blogs, or who you’re talking to. Your contact list lives encrypted only on your device. When using the internet, Tor onion services hide relationships and IPs (so no, it does **not** disclose your IP to contacts like naive P2P systems would). Local Bluetooth/Wi-Fi reveals physical proximity to nearby devices, but the threat model assumes adversaries have *limited* ability to monitor short-range channels.
+- **No server can read anything or perform MITM** — The server-related risks you mentioned (advertising keys, joining chats without consent, leaking reactions, etc.) simply don’t exist. There is no server.
+- **Content is fully E2EE** — All private messages, group chats, forums, and blogs are end-to-end encrypted by default. Messages are stored only on the participating devices (encrypted), never in the cloud.
+- **Censorship/blackout resistant** — Works offline via Bluetooth/Wi-Fi (mesh-like store-and-forward through mutual contacts). Forums and blogs replicate across subscribers, so there’s no single point for takedowns or filtering. Perfect for internet shutdowns.
+
+**Briar Mailbox** (a companion always-on Android app) lets you leave a device at home as a relay so you can still receive messages when your main device is offline—without compromising the no-server model.
+
+### Security and Encryption
+- **End-to-end encryption with forward secrecy** — Uses a custom protocol suite called Bramble (BQP for contact exchange/QR intro, BHP handshake, BTP transport with rotation mode for forward secrecy, plus BSP for sync). It provides forward secrecy for messages (past conversations stay protected even if keys are later compromised). It does **not** use post-quantum cryptography (unlike Signal’s recent upgrades). It relies on standard, well-studied primitives (e.g., X25519 key exchange) that the adversary is assumed unable to break.
+- **Contact verification is strong by design** — You normally add contacts via in-person QR code scan or `briar://` link. This gives very high assurance against MITM (far stronger than default XMPP clients). Remote verification exists but is limited (one of the 2023 audit findings noted this).
+- **Deniability and other features** — Some protocol parts support deniability (plausible deniability against “wrench attacks”/coercion).
+
+### Audits and Track Record
+Briar has been independently audited multiple times (funded by Open Technology Fund):
+- **2017 Cure53 audit** (app + protocols BQP/BSP/BTP): Issues found and fully fixed before beta release.
+- **2023 Radically Open Security audit** (Android + desktop clients, protocols, crypto): White-box assessment. Found **1 moderate risk** (Android overlay attack—preventable on Android 12+) and **5 low-risk** issues (e.g., Wi-Fi PSK brute-force on first share, TCP Tor exposure, stack overflow potential, incomplete remote verification, inconsistent deniability docs). A 2024 retest confirmed **4 of 6 issues fixed**; the remaining 2 (TCP sandboxing and full remote verification) were planned for fixes. No critical/high risks. The project remains actively maintained (latest release: 1.5.17 in March 2026; Desktop 0.6 beta available).
+
+It’s fully open-source with reproducible builds, and the protocol specs are public on their GitLab.
+
+### Limitations (Realistic Trade-offs)
+- **Usability vs. always-on apps** — It’s P2P and opportunistic, so delivery isn’t instant/reliable unless you’re online via Tor or in Bluetooth/Wi-Fi range (or using Mailbox). Not as seamless as Signal for casual daily use.
+- **Platforms** — Primarily Android. Desktop is in beta (Linux/Windows/macOS). No iOS.
+- **No post-quantum** — If your threat model includes future quantum computers breaking classical crypto, Signal is ahead here.
+- **Device security matters** — If your phone is compromised (malware, physical access), everything is at risk—same as any app, but Briar’s threat model explicitly treats insecure devices as adversary-controlled.
+- **Android-specific issues** — The 2023 overlay attack and Wi-Fi sharing quirks are platform quirks, not protocol breaks.
+
+### How It Fits Your Threat Model Discussion
+If you need **Signal-level (or better) security** without trusting *any* server—even a “semi-trusted” one like Snikket—Briar is exactly what the earlier comment in your thread recommended. It goes further than OMEMO/XMPP by removing the server from the equation entirely, while still providing forward secrecy and strong metadata protection via Tor. The only “trust” is in the cryptography and your contacts’ devices (plus verifying via QR when possible). For regimes that block internet or monitor everything, the Bluetooth/offline modes and Tor bridge support make it uniquely resilient.
+
+It’s not trying to be a polished everyday messenger like Signal—it’s built for the scenarios where XMPP/Signal servers become liabilities. If your threat model is “I trust no infrastructure and may face internet blackouts/surveillance,” Briar is currently one of the best (if not *the* best) tools available. For lighter threat models, Signal or hardened XMPP might be more practical.
+
 The omemo spec -> https://xmpp.org/extensions/xep-0384.html
 signal docs https://signal.org/blog/spqr/ https://signal.org/docs/
 

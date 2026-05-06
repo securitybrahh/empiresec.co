@@ -1,0 +1,91 @@
+---
+title: "XMPP and other privacy messengers"
+date: 2026-05-06T00:00:52Z
+# weight: 1
+aliases: ["/xmpp"]
+tags: ["xmpp", "privacy", "security", "messaging", "signal", "briar", "simplex"]
+author: "Security Brahh"
+description: "Threat modeling phone numbers, SIMs, IMEI, and internet connectivity"
+draft: false
+---
+
+# XMPP and other privacy messengers
+
+The omemo spec -> https://xmpp.org/extensions/xep-0384.html
+signal docs https://signal.org/blog/spqr/ https://signal.org/docs/
+
+signal uses post quantum something, OMEMO doesn't
+
+if your threat model requires signal level of security i would look at briar. there are some efforts done by XSF and Jabboratory to improve the protocol side of XMPP but its not at the same level for the short term
+
+and even if we had these improvements the apps still have to implement them so you could never replicate signal in XMPP (by design)
+
+the server can do quite a few things even with omemo always enabled, so its always a good idea to pick a server you trust
+
+we also had a security issue lately where the reactions would leak the contents of the message (to the server) so depending on the app you use you need to be careful with that too
+
+snikket still shows you fingerprints in groupchats.
+
+but yes, unless you go around and validate fingerprints carefully, you *always* have to trust your server in the moment you establish a conversation.
+
+OMEMO still gives you some kind of forward secrecy in the sense that past conversations cannot be compromised.
+
+FWIW Snikket is designed with a semi-trusted server in mind. The reason Snikket uses E2EE is in case of server compromise, not primarily because you think the admin is going to try reading your messages.
+
+How much does the server knows it terms of metadata, all groups, contacts? 
+
+yeah, groups, contacts, all group metadata, your keys, any blogs or other writings you have
+
+only public keys. the server basically gives your public key to your contacts
+
+no briar is different than that. it works without servers. but there are other security and privacy issues there
+
+> if it works without servers, then you very likely disclose your IP address to your contacts.
+
+briar works over TOR, it won't disclose IPs but being P2P it's harder to stay 100% online
+
+
+https://docs.i2pd.website/en/latest/tutorials/xmpp/
+
+Though briar can also do bluetooth so might still work if you're facing a regime like Iran
+
+You're describing a MITM attack, which is very basic security stuff, and the solution is key verification. This isn't really related to Prosody.
+
+> You're describing a MITM attack, which is very basic security stuff, and the solution is key verification. This isn't really related to Prosody.
+
+Which clients barely let you do by default
+
+Blind verification and all
+
+BTBV also does pin state to prevent some future MITM unless you push the "dancing pigs" button
+
+I would emphasize "by default". Removing BTBV by default would rapidly decrease XMPP adoption - because it's not what most people expect or even want.
+
+But the manual verification mechanisms are entirely there for people who want that
+
+If I am using Snikket app on android is the server choice relevant to e2ee? 
+
+I think simplex maybe doing something different though I don't know how much "servers" there knows. 
+
+
+Generally not. Every Snikket server supports what's needed for E2EE (just some stuff to facilitate key exchange). Practically every non-Snikket server supports it too.
+
+
+I hear a server can advertise its own keys to recieve copy of your msgs and can join chats without your consent
+
+Yes, this is possible in any protocol
+
+For any kind of encryption you need to verify your contact's keys if you are concerned they may not be legitimate
+
+No, this is a fundamental principle of all encryption
+
+If you verify your contact's keys (using some appropriate mechanism) then MITM can't happen. If you don't verify them, it could.
+
+the points *where* the MITM has to happen differ, of course.
+
+for peer-to-peer things, the MITM generally _has_ to happen on the network paths between the peers, while for server-based things, the MITM may also happen by breaching the server.
+
+simplex is not p2p, it's more of the mailbox server style
+
+How is briar doing in terms of privacy and security? 
+
